@@ -1,0 +1,288 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  height: auto;
+}
+
+#home {
+  position: fixed;
+  left: 8.0rem;
+  height: 100vh;
+}
+
+.home__titles {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.home__title {
+  font-size: 7.5rem;
+}
+
+.home__subtitle {
+  font-size: 3.2rem;
+}
+
+#navbar {
+  width: 8.0rem;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background-color: #41D6BB;
+}
+
+.nav__icon {
+  margin: 86vh 0;
+}
+
+.nav__icon img {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#nav__icon__github {
+  margin-bottom: 1rem;
+}
+
+#about {
+  width: 80%;
+  height: auto;
+  margin: 3.0rem auto;
+}
+
+#about h3 {
+  margin: 0 auto;
+  font-size: 3.2rem;
+  border-bottom: 1px solid #6D7278;
+  padding-bottom: .5rem;
+}
+
+#about h3 .about__contens__num {
+  color: #41D6BB;
+  font-size: 5.2rem;
+  margin-right: 2.0rem;
+}
+
+#about h3 .about__contents__category {
+  font-size: 1.8rem;
+  vertical-align: bottom;
+  float: right;
+}
+
+#about .contents__whiiam {
+  width: 60%;
+  margin: 20.0rem auto;
+}
+
+#about .contents__whiiam #whoiam__name {
+  margin-bottom: .5rem;
+  font-size: 2.0rem;
+  font-weight: 700;
+}
+
+#about .contents__whiiam #whoiam__text {
+  word-break: break-word;
+}
+
+#about .contents__passion__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12.0rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#about .contents__passion__wrap .contents__passion {
+  text-align: center;
+  width: 30%;
+}
+
+#about .contents__passion__wrap .contents__passion .fas {
+  font-size: 5.0rem;
+  color: #fff;
+  background-color: #222222;
+  padding: 2.0rem;
+  border-radius: 50%;
+}
+
+#about .contents__passion__wrap .contents__passion .passion__text {
+  word-wrap: break-word;
+}
+
+#about .contents__passion__wrap .contents__passion .passion__title {
+  font-size: 2.0rem;
+  margin: 2.0rem 0;
+}
+
+#about #contents__skills__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8.2rem auto 7.0rem auto;
+}
+
+#about #contents__skills__wrap .contents__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46%;
+  margin-bottom: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about #contents__skills__wrap .contents__skills img {
+  width: 15%;
+  margin-right: 0.8rem;
+}
+
+#about #contents__skills__wrap .contents__skills .skills__titles {
+  width: 100%;
+}
+
+#about #contents__skills__wrap .contents__skills .skills__titles .skills__skilleach {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+#about #contents__skills__wrap .contents__skills .skills__titles .skills__skilleach > p {
+  font-size: 2.1rem;
+}
+
+#about #contents__skills__wrap .contents__skills .skills__titles .skills__percentage {
+  height: 1.2rem;
+  width: 100%;
+  background: green;
+  border-radius: 10px;
+}
+
+#about .about__contents__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12.0rem 0;
+}
+
+#about .about__contents__contact > p {
+  font-size: 2.1rem;
+  margin-right: 6.0rem;
+}
+
+#about .about__contents__contact .contact__info a {
+  color: #222222;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#about .about__contents__contact .contact__info a > p {
+  margin-bottom: 1.0rem;
+  font-size: 1.8rem;
+}
+
+#about .about__contents__contact .contact__info a > p .fas {
+  margin-right: 1.0rem;
+}
+
+#about .about__contents__contact .contact__info a:hover {
+  color: #1f927d;
+}
+
+#work {
+  width: 100%;
+  color: #fff;
+}
+
+#work .work__contents__bm {
+  background-color: #EA4E36;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#work .work__contents__bm .work__contents__left {
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(108, 108, 108, 0.8);
+  padding: 5.0rem;
+}
+
+#work .work__contents__bm .work__contents__left .work__contents__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-bottom: 0.5rem;
+}
+
+#work .work__contents__bm .work__contents__left .work__contents__title .work__contents_num {
+  color: #41D6BB;
+  font-size: 5.2rem;
+}
+
+#work .work__contents__bm .work__contents__left .work__left__title .work__project__service {
+  font-size: 2.4rem;
+}
+
+#work .work__contents__bm .work__contents__left .work__left__title .work__project__title {
+  font-size: 5.0rem;
+  margin: 1.0rem 0;
+}
+
+#work .work__contents__bm .work__contents__left .work__left__title .work__project__purpse {
+  font-size: 2.0rem;
+}
+
+#work .work__contents__bm .work__contents__left .work__left__pagecount > div {
+  background: #AFAFAF;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.5rem;
+  border-radius: 50px;
+}
+
+#work .work__contents__bm .work__contents__right {
+  width: 50%;
+}
+
+#work .work__contents__bm .work__contents__right img {
+  width: 15%;
+}
+/*# sourceMappingURL=styles.css.map */

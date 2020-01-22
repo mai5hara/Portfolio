@@ -1,0 +1,146 @@
+#about{
+    width: 80%;
+    height: auto;
+    margin: 3.0rem auto;
+
+    h3 {
+        margin: 0 auto;
+        font-size: 3.2rem;
+        border-bottom: 1px solid $off-white;
+        padding-bottom: .5rem;
+
+        .about__contens__num {
+            color: $light-green;
+            font-size: 5.2rem;
+            margin-right: 2.0rem;
+        }
+
+        .about__contents__category {
+            font-size: 1.8rem;
+            vertical-align: bottom;
+            float: right;
+        }
+    }
+
+    .contents__whiiam {
+        width: 60%;
+        margin: 20.0rem auto;
+
+        #whoiam__name {
+            margin-bottom: .5rem;
+            font-size: 2.0rem;
+            font-weight: 700;
+        }
+
+        #whoiam__text {
+            word-break: break-word;
+        }
+    }
+
+    .contents__passion__wrap {
+        display: flex;
+        margin: 12.0rem;
+        justify-content: space-around;
+
+        .contents__passion {
+            text-align: center;
+            width: 30%;
+
+            .fas {
+                font-size: 5.0rem;
+                color: #fff;
+                background-color: $black;
+                padding: 2.0rem;
+                border-radius: 50%;
+            }
+
+            .passion__text {
+                word-wrap: break-word;
+            }
+
+            .passion__title {
+                font-size: 2.0rem;
+                margin: 2.0rem 0;
+            }
+        }
+    }
+
+    #contents__skills__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        margin: 8.2rem auto 7.0rem auto;
+    
+
+        .contents__skills {
+            display: flex;
+            width: 46%;
+            margin-bottom: 1.2rem;
+            align-items: center;
+
+            img {
+                width: 15%;
+                margin-right: 0.8rem;
+            }
+
+            .skills__titles {
+                width: 100%;
+
+                .skills__skilleach {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.7rem;
+
+                    >p {
+                        font-size: 2.1rem;
+                    }
+                }
+    
+                .skills__percentage {
+                    height: 1.2rem;
+                    width: 100%;
+                    background: green;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+    }
+        
+
+    .about__contents__contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12.0rem 0;
+
+        >p {
+            font-size: 2.1rem;
+            margin-right: 6.0rem;
+        }
+
+        .contact__info {
+
+            a {
+                color: $black;
+                text-decoration: none;
+                cursor: pointer;
+            
+                >p {
+                    margin-bottom: 1.0rem;
+                    font-size: 1.8rem;
+        
+                    .fas {
+                        margin-right: 1.0rem;
+                    }
+                }
+            }
+
+            a:hover{
+                color: darken($light-green, 20%);
+            }
+        }
+    }
+}
+

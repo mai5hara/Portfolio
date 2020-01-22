@@ -1,0 +1,22 @@
+#navbar {
+    width: 8.0rem;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    background-color: $light-green;
+}
+
+.nav__icon {
+    margin: 86vh 0;
+}
+
+.nav__icon img {
+    width: 40%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+#nav__icon__github {
+    margin-bottom: 1rem;
+}
