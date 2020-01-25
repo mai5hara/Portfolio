@@ -1,20 +1,57 @@
-#work {
+.project__inner {
     width: 100%;
-    // height: 100vh;
+    height: 100vh;
     color: #fff;
 
-    .work__contents__bm {
-        background-color: #EA4E36;
+    .contents__scroll__wrap {
+        position: relative;
+        top: 50px;
+        height: 50px;
+        width: 50wh;
+        position: fixed;
+        z-index: 3;
+        
+
+        .contents__scroll {
+            width: 65px;
+            height: 65px;
+            border-radius: 100%;
+            // bottom: 60px;
+            cursor: pointer;
+            overflow: hidden;
+            background-color: $light-green;
+    
+            >span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 2px;
+                height: 8px;
+                background-color: #fff;
+    
+            }
+    
+            >span:last-child {
+                margin: -1px 0 0;
+                transform: rotate(45deg) translate3d(0,0,0);
+            }
+        }
+    }
+
+    .work__contents__wrap {
         height: 100vh;
         width: 100%;
         display: flex;
-        position: relative;
+        // position: absolute;
+        // left: 0;
+        z-index: -1;
 
         .work__contents__left {
             width: 50%;
             height: 100vh;
             background-color: rgba($light-gray,0.8);
             padding: 5.0rem;
+            padding-left: 13.0rem;
 
             .work__contents__title {
                 display: flex;
@@ -31,8 +68,7 @@
             }
 
             .work__left__title {
-                // position: absolute;
-                // top: 50%;
+                margin: 20vh 0;
 
                 .work__project__service {
                     font-size: 2.4rem;
@@ -48,27 +84,47 @@
                 }
             }
 
-            .work__left__pagecount {
-                // position: absolute;
-                // bottom: 10%;
-
-                >div {
-                    background: #AFAFAF;
-                    width: 1.1rem;
-                    height: 1.1rem;
-                    margin: 0.5rem;
-                    border-radius: 50px;
-
-                }
-            }
         }
+
 
         .work__contents__right {
             width: 50%;
+            height: 100vh;
 
-            img {
-                width: 15%;
+            #bm__logo {
+                display: block;
+                width: 20%;
+                margin: 40vh auto;
+            }
+
+            #otm__logo {
+                display: block;
+                width: 56%;
+                margin: 3vh auto;
             }
         }
     }
+
+    #work__bg__bm {
+        background-color: #EA4E36;
+    }
+
+    #work__bg__otm {
+        background-image : url('../../imgs/mountain.jpg');
+    }
+
+    .work__left__pagecount {
+        position: fixed;
+        display: block;
+
+        >li {
+            background: #AFAFAF;
+            width: 1.1rem;
+            height: 1.1rem;
+            margin: 0.5rem;
+            border-radius: 50px;
+
+        }
+    }
+
 }

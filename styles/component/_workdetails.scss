@@ -1,0 +1,174 @@
+#work__details {
+    width: 100%;
+
+    .details__topimage {
+        height: 16.8rem;
+        background-color: rgba($light-gray,0.8);
+        background-image: url('../../imgs/top_design.jpg');
+
+        // img {
+        //     height: 16.8rem;
+        //     width: auto;
+        // }
+    }
+
+    .work__details__contents {
+        width: 60%;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 3.2rem;
+        }
+
+        .details__project__detail {
+            display: flex;
+            margin: 5.5rem 0;
+
+            .project__detail__right, .project__detail__left {
+
+                p {
+                    font-size: 1.8rem;
+                    margin-bottom: 1.8rem;
+
+                    span {
+                        font-size: 1.3rem;
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        color: $light-gray;
+                    }
+                }
+            }
+
+            .project__detail__right {
+                width: 60%;
+                word-break: break-word;
+            }
+
+            .project__detail__left {
+                width: 30%;
+                margin-right: 10%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            .project__site {
+                background-color: $light-green;
+                border-radius: 50px;
+                width: 30%;
+                margin: 3.5rem auto 5.0rem auto;
+                height: 4.3rem;
+                text-align: center;
+    
+                p {
+                    align-items: center;
+                    line-height: 4.3rem;
+                    vertical-align: center;
+                    color: #fff;
+                    font-size: 2.0rem;
+                }
+            }
+
+            .project__site:hover {
+                background-color: darken($light-green,10%);
+            }
+        }
+
+        .details__project__design {
+            
+            .project__design__category {
+                color: $off-white;
+            }
+
+            .design__category__wrap {
+                display: flex;
+                width: 60%;
+                margin: 8.0rem auto;
+                justify-content: center;
+
+                img {
+                    width: 35%;
+                }
+
+                .img__left {
+                    margin-right: 7.0rem;
+                }
+            }
+        }
+
+        .project__design__color {
+
+            .design__category__wrap {
+                justify-content: center;
+                
+                .design__color__details {
+                    margin: 0 2.0rem;
+
+                    .color__details__palet {
+                        width: 150px;
+                        height: 60px;
+                        margin-bottom: 0.6rem;
+                    }
+        
+                    #palet1 {
+                        background-color: #EA4E38;
+                    }
+        
+                    #palet2 {
+                        background-color: #222222;
+                    }
+        
+                    #palet3 {
+                        background-color: #EAEAEA;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        padding-top: 0.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .project__design__typo {
+
+            .design__typo__wrap {
+                text-align: center;
+                margin: 0 3.0rem;
+
+                .design__typo__fontsize {
+                    font-size: 3.5rem;
+                    margin-bottom: 0.6rem;
+    
+                    .design__typo__font {
+                        display: block;
+                    }
+                }
+    
+                #font__helvetica {
+                    font-family: Helvetica;
+                }
+    
+                #font__rockwell {
+                    font-family: 'Roboto Slab', serif;
+                }
+            }
+        }
+
+        
+
+            .project__design__img {
+                margin-bottom: 5.0rem;
+
+                p {
+                    margin-bottom: 2.0rem ;
+                }
+    
+                img {
+                    width: 100%;
+                }
+            }
+    }
+}

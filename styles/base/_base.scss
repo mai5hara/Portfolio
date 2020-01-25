@@ -5,5 +5,8 @@ html {
 body {
     font-size: 1.6rem;
     font-family: $body-font;
-    height: auto;
+    // height: auto;
+    position: relative;
+    left: 8.0rem;
+    margin-right: 8.0rem;
 }
