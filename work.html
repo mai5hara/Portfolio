@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://kit.fontawesome.com/0020439f70.js" crossorigin="anonymous"></script>
+    <script src="script/fullpage.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/reset.css">
     <title>Work</title>
@@ -42,11 +44,10 @@
             </div>
         </nav>
     </header>
-    <div id="home">
+    <!-- <div id="home">
         <div class="home__titles">
             <h1 class="home__title" data-wait="3000" data-words='["HELLO.","WELCOME TO MY WEBSITE."]'></h1>
             <h2 class="home__name">I AM MAI GOHARA</h2class="home__title">
-            <!-- <span>Front - End Developer / UI designer</span> -->
             <p class="home__subtitle">Front-end developer / UI designer</p>
         </div>
         <div class="home__scroll__btn_wrap">
@@ -60,13 +61,24 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
     <main>
-        <div class="project__inner">
-            <div class="work__contents">
-                <section class="work__contents__wrap brushmap" id="work__bg__bm">
+        <div class="home__inner">
+                <div id="home">
+                    <div class="home__titles">
+                        <h1 class="home__title" data-wait="3000" data-words='["HELLO.","WELCOME."]'></h1>
+                        <h2 class="home__name">I AM MAI GOHARA</h2class="home__title">
+                        <p class="home__subtitle">Front-end developer / UI designer</p>
+                    </div>
+                    <div class="home__scroll__btn_wrap">
+                        <div class="home__scroll__btn">
+                            <a href="#">SCROLL<span></span></a>
+                        </div>
+                    </div>
+                </div>
+                <section class="work__contents__wrap brushmap" id="work__bg__bm" id="section1">
                     <div class="work__contents__left">
-                        <div class="work__contents__title">
+                        <div class="work__contents__title　work__title__animation">
                             <p class="work__contents_num">01</p>
                             <p class="work__contents__category">WORK</p>
                         </div>
@@ -80,12 +92,13 @@
                         <img id="bm__logo" src="imgs/brushmap_logo_whitever.png">
                     </div>
                 </section>
-                <section class="work__contents__wrap onthemountain" id="work__bg__otm">
+                <section class="work__contents__wrap onthemountain" id="work__bg__otm" id="section2">
                     <div class="work__contents__left">
                         <div class="work__contents__title">
                             <p class="work__contents_num">02</p>
                             <p class="work__contents__category">WORK</p>
                         </div>
+                        <div class="work__contents__border__otm"></div>
                         <div class="work__left__title">
                             <p class="work__project__service">Web servise / Mobile servise</p>
                             <p class="work__project__title">On The Mountain</p>
@@ -96,15 +109,13 @@
                         <img id="otm__logo" src="imgs/iphone.png">
                     </div>
                 </section>
-            </div>
         </div>
+        <ul class="work__pagenation" id="pagenation">
+            <a id="pagenation1" href="#section1"><li></li></a>
+            <a id="pagenation2" href="#section2"><li></li></a>
+        </ul>
     </main>
-    <ul class="work__left__pagecount">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <script src="script/fullpage.min.js"></script>
     <script src="script/main.js"></script>
 </body>
 </html>

@@ -1,12 +1,8 @@
-
-
 #home {
     position: fixed;
     height: 100vh;
-    // position: absolute;
-    // left: 0;
-    background-color: #fff;
     width: 100%;
+    // background-color: #fff;
 
     .home__titles {
         width: 100%;
@@ -42,40 +38,38 @@
         top: 85%;
         margin: 0 auto;
         width: 100%;
-    .home__scroll__btn {
-        
-
-        background-color: $light-green;
-        // border: 2px solid $light-green;
-        border-radius:50%;
-        padding: 2.4rem .6rem;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 1.2rem;
-        margin-bottom: 50px;
-        text-decoration: none;
-        color: $light-green;
-    
-        a {
+        .home__scroll__btn {
+            background-color: $light-green;
+            // border: 2px solid $light-green;
+            border-radius:50%;
+            padding: 2.4rem .6rem;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
             text-decoration: none;
-            color: #fff;
-    
-            span {
-                position: absolute;
-                top: 80%;
-                left: 50%;
-                width: 20px;
-                height: 20px;
-                margin-left: -10px;
-                border-left: 1.5px solid $light-green;
-                border-bottom: 1.5px solid $light-green;
-                -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-                -webkit-animation: sdb 1.5s infinite;
-                animation: sdb 1.5s infinite;
-                box-sizing: border-box;
+            color: $light-green;
+        
+            a {
+                text-decoration: none;
+                color: #fff;
+        
+                span {
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: -10px;
+                    border-left: 1.5px solid $light-green;
+                    border-bottom: 1.5px solid $light-green;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    -webkit-animation: sdb 1.5s infinite;
+                    animation: sdb 1.5s infinite;
+                    box-sizing: border-box;
+                }
             }
-        }
     
         // .home__scroll__btn:hover {
         //         color: #fff;

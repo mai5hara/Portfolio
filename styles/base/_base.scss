@@ -3,10 +3,19 @@ html {
 }
 
 body {
+    // width: 100%;
     font-size: 1.6rem;
     font-family: $body-font;
     // height: auto;
     position: relative;
     left: 8.0rem;
     margin-right: 8.0rem;
+}
+
+@include mq('sp') {
+    body {
+        position: relative;
+        left: 0rem;
+        margin-right: 0rem;
+    }
 }

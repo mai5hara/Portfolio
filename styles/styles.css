@@ -1,3 +1,6 @@
+/*==============
+    mediaquery
+==============*/
 html {
   font-size: 62.5%;
 }
@@ -10,103 +13,11 @@ body {
   margin-right: 8.0rem;
 }
 
-#home {
-  position: fixed;
-  height: 100vh;
-  background-color: #fff;
-  width: 100%;
-}
-
-#home .home__titles {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  margin: 35vh 0;
-}
-
-#home .home__titles .home__title, #home .home__titles .home__name {
-  font-size: 7.5rem;
-}
-
-#home .home__titles .home__title__add {
-  border-right: 0.2rem solid #777;
-}
-
-#home .home__titles .home__subtitle {
-  font-size: 3.2rem;
-}
-
-#home .home__scroll__btn_wrap {
-  position: relative;
-  left: 50vw;
-  top: 85%;
-  margin: 0 auto;
-  width: 100%;
-}
-
-#home .home__scroll__btn_wrap .home__scroll__btn {
-  background-color: #41D6BB;
-  border-radius: 50%;
-  padding: 2.4rem .6rem;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 50px;
-  text-decoration: none;
-  color: #41D6BB;
-}
-
-#home .home__scroll__btn_wrap .home__scroll__btn a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#home .home__scroll__btn_wrap .home__scroll__btn a span {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  border-left: 1.5px solid #41D6BB;
-  border-bottom: 1.5px solid #41D6BB;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb 1.5s infinite;
-  animation: sdb 1.5s infinite;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-            transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-            transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-
-@keyframes sdb {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-            transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-            transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
+@media screen and (max-width: 767px) {
+  body {
+    position: relative;
+    left: 0rem;
+    margin-right: 0rem;
   }
 }
 
@@ -227,6 +138,32 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  #navbar .navbar__side {
+    width: 100%;
+    height: 6.0rem;
+    position: fixed;
+    border-bottom: 1px solid #fff;
+  }
+  #navbar .navbar__side .nav__menu__hamb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4.0rem;
+    margin: 1.0rem 0 1.0rem 1.2rem;
+    width: 4.0rem;
+    z-index: 1;
+  }
+  #navbar .nav__nemu__container {
+    height: auto;
+    width: 100%;
+  }
+  #navbar .nav__nemu__container .nav__menu__list__wrap {
+    width: 100%;
+    height: auto;
+  }
+}
+
 #about {
   width: 100%;
   height: auto;
@@ -274,18 +211,28 @@ body {
   font-size: 1.8rem;
 }
 
-#about .about__wrap .contents__whiiam {
-  width: 60%;
-  margin: 20.0rem auto;
+#about .about__wrap .contents__whoiam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12.0rem 30.0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#about .about__wrap .contents__whiiam #whoiam__name {
-  margin-bottom: .5rem;
+#about .about__wrap .contents__whoiam img {
+  width: 30%;
+  margin-right: 4.0rem;
+}
+
+#about .about__wrap .contents__whoiam .whoiam__wrap #whoiam__name {
+  margin-bottom: 0.5rem;
   font-size: 2.0rem;
   font-weight: 700;
 }
 
-#about .about__wrap .contents__whiiam #whoiam__text {
+#about .about__wrap .contents__whoiam .whoiam__wrap #whoiam__text {
   word-break: break-word;
 }
 
@@ -300,7 +247,7 @@ body {
 
 #about .about__wrap .contents__passion__wrap .contents__passion {
   text-align: center;
-  width: 30%;
+  width: 25%;
 }
 
 #about .about__wrap .contents__passion__wrap .contents__passion .fas {
@@ -320,7 +267,7 @@ body {
   margin: 2.0rem 0;
 }
 
-#about .about__wrap #contents__skills__wrap {
+#about .about__wrap .contents__skills__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +280,7 @@ body {
   margin: 8.2rem auto 7.0rem auto;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills {
+#about .about__wrap .contents__skills__wrap .contents__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,16 +291,16 @@ body {
           align-items: center;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills img {
+#about .about__wrap .contents__skills__wrap .contents__skills img {
   width: 15%;
   margin-right: 0.8rem;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles {
   width: 100%;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__skilleach {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__skilleach {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,36 +310,71 @@ body {
   margin-bottom: 0.7rem;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__skilleach > p {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__skilleach > p {
   font-size: 2.1rem;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__wrap {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap {
   border: 1px solid #cacaca;
   border-radius: 10px;
+  width: 100%;
   -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
           box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__html, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__ps, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__js, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__react, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__sketch, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__sass, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__ps, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__ai, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__pr, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .skills__percentage__af {
   height: 1.2rem;
-  width: 30%;
-  background-color: #0DC600;
   background-image: -webkit-gradient(linear, left top, right top, from(#0DC600), to(#ACC6FF));
   background-image: linear-gradient(to right, #0DC600, #ACC6FF);
   border-radius: 10px;
+  opacity: 0;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__wrap #percentage__html {
+@-webkit-keyframes sizeScale {
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes sizeScale {
+  0% {
+    width: 0%;
+  }
+}
+
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__html, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__ps {
+  opacity: 1;
+  -webkit-animation: sizeScale 1.5s ease;
+          animation: sizeScale 1.5s ease;
   width: 80%;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__wrap #percentage__js {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__js {
+  opacity: 1;
+  -webkit-animation: sizeScale 1.5s ease;
+          animation: sizeScale 1.5s ease;
   width: 60%;
 }
 
-#about .about__wrap #contents__skills__wrap .contents__skills .skills__titles .skills__wrap #percentage__js {
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__react, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__af {
+  opacity: 1;
+  -webkit-animation: sizeScale 1.5s ease;
+          animation: sizeScale 1.5s ease;
   width: 30%;
+}
+
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__sketch, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__sass {
+  opacity: 1;
+  -webkit-animation: sizeScale 1.5s ease;
+          animation: sizeScale 1.5s ease;
+  width: 50%;
+}
+
+#about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__ai, #about .about__wrap .contents__skills__wrap .contents__skills .skills__titles .skills__wrap .percentage__pr {
+  opacity: 1;
+  -webkit-animation: sizeScale 1.5s ease;
+          animation: sizeScale 1.5s ease;
+  width: 70%;
 }
 
 #about .about__wrap .about__contents__contact {
@@ -413,32 +395,104 @@ body {
   margin-right: 6.0rem;
 }
 
-#about .about__wrap .about__contents__contact .contact__info a {
+#about .about__wrap .about__contents__contact .contact__info li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+#about .about__wrap .about__contents__contact .contact__info li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #222222;
   text-decoration: none;
   cursor: pointer;
+  margin: auto 0;
 }
 
-#about .about__wrap .about__contents__contact .contact__info a > p {
-  margin-bottom: 1.0rem;
-  font-size: 1.8rem;
-}
-
-#about .about__wrap .about__contents__contact .contact__info a > p .fas {
+#about .about__wrap .about__contents__contact .contact__info li a .fas, #about .about__wrap .about__contents__contact .contact__info li a .fab {
+  font-size: 2.4rem;
   margin-right: 1.0rem;
+}
+
+#about .about__wrap .about__contents__contact .contact__info li a p {
+  font-size: 1.8rem;
 }
 
 #about .about__wrap .about__contents__contact .contact__info a:hover {
   color: #1f927d;
 }
 
-.project__inner {
+@media screen and (max-width: 767px) {
+  #about .about__wrap {
+    width: 90%;
+  }
+  #about .about__wrap .about__contents .about__title__wrap .about__num__title .about__contens__num {
+    font-size: 3.8rem;
+  }
+  #about .about__wrap .about__contents .about__title__wrap .about__num__title .about__contens__title {
+    font-size: 2.5rem;
+  }
+  #about .about__wrap .about__contents .about__title__wrap .about__contents__category {
+    font-size: 1.2rem;
+  }
+  #about .about__wrap .about__contents .contents__whoiam {
+    margin: 3.3rem 0 5.5rem 0;
+    display: block;
+  }
+  #about .about__wrap .about__contents .contents__whoiam img {
+    margin-right: 0;
+    width: 100%;
+  }
+  #about .about__wrap .about__contents .contents__whoiam .whoiam__wrap {
+    margin-top: 1.0rem;
+  }
+  #about .about__wrap .about__contents .contents__passion__wrap {
+    display: block;
+    margin: 3.3rem 0 5.5rem 0;
+  }
+  #about .about__wrap .about__contents .contents__passion__wrap .contents__passion {
+    width: 100%;
+    margin-bottom: 5.0rem;
+  }
+  #about .about__wrap .about__contents .contents__skills__wrap {
+    margin-top: 3.3rem;
+    margin-bottom: 5.5rem;
+    display: block;
+  }
+  #about .about__wrap .about__contents .contents__skills__wrap .contents__skills {
+    width: 100%;
+    margin-bottom: 2.0rem;
+  }
+  #about .about__wrap .about__contents .contents__skills__wrap .contents__skills img {
+    width: 20%;
+  }
+  #about .about__wrap .about__contents .contents__skills__wrap .contents__skills .skills__skilleach p {
+    font-size: 1.8rem;
+  }
+  #about .about__wrap .about__contents .about__contents__contact {
+    display: block;
+    margin: 5.5rem 1.5rem;
+  }
+  #about .about__wrap .about__contents .about__contents__contact > p {
+    font-size: 2.0rem;
+    margin-bottom: 1.0rem;
+  }
+  #about .about__wrap .about__contents .about__contents__contact .contact__info .fas, #about .about__wrap .about__contents .about__contents__contact .contact__info .fab {
+    font-size: 2.0rem;
+  }
+  #about .about__wrap .about__contents .about__contents__contact .contact__info p {
+    font-size: 1.5rem;
+  }
+}
+
+.home__inner {
   width: 100%;
   height: 100vh;
   color: #fff;
 }
 
-.project__inner .contents__scroll__wrap {
+.home__inner .contents__scroll__wrap {
   position: relative;
   top: 50px;
   height: 50px;
@@ -447,7 +501,7 @@ body {
   z-index: 3;
 }
 
-.project__inner .contents__scroll__wrap .contents__scroll {
+.home__inner .contents__scroll__wrap .contents__scroll {
   width: 65px;
   height: 65px;
   border-radius: 100%;
@@ -456,7 +510,7 @@ body {
   background-color: #41D6BB;
 }
 
-.project__inner .contents__scroll__wrap .contents__scroll > span {
+.home__inner .contents__scroll__wrap .contents__scroll > span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -465,34 +519,136 @@ body {
   background-color: #fff;
 }
 
-.project__inner .contents__scroll__wrap .contents__scroll > span:last-child {
+.home__inner .contents__scroll__wrap .contents__scroll > span:last-child {
   margin: -1px 0 0;
   -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
           transform: rotate(45deg) translate3d(0, 0, 0);
 }
 
-.project__inner .work__contents__wrap {
+.home__inner #home {
   height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: -1;
+  z-index: 2;
+  color: #222222;
+  background-color: #fff;
+  scroll-snap-align: start;
 }
 
-.project__inner .work__contents__wrap .work__contents__left {
+.home__inner #home .home__titles {
+  width: 100vw;
+  height: 100%;
+  margin: 32vh 0 32vh 6.0rem;
+}
+
+.home__inner #home .home__titles .home__title, .home__inner #home .home__titles .home__name {
+  font-size: 7.5rem;
+}
+
+.home__inner #home .home__titles .home__title__add {
+  border-right: 0.2rem solid #777;
+}
+
+.home__inner #home .home__titles .home__subtitle {
+  font-size: 3.2rem;
+}
+
+.home__inner #home .home__scroll__btn_wrap {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.home__inner #home .home__scroll__btn_wrap .home__scroll__btn {
+  position: absolute;
+  left: 47.9%;
+  top: 85%;
+  background-color: #41D6BB;
+  border-radius: 50%;
+  padding: 2.4rem .6rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: #41D6BB;
+}
+
+.home__inner #home .home__scroll__btn_wrap .home__scroll__btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home__inner #home .home__scroll__btn_wrap .home__scroll__btn a span {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  border-left: 1.5px solid #41D6BB;
+  border-bottom: 1.5px solid #41D6BB;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+.home__inner .work__contents__wrap {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.home__inner .work__contents__wrap .work__contents__left {
   width: 50%;
   height: 100vh;
   background-color: rgba(108, 108, 108, 0.8);
   padding: 5.0rem;
-  padding-left: 13.0rem;
 }
 
-.project__inner .work__contents__wrap .work__contents__left .work__contents__title {
+.home__inner .work__contents__wrap .work__contents__left .work__contents__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #fff;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -503,64 +659,107 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.project__inner .work__contents__wrap .work__contents__left .work__contents__title .work__contents_num {
+.home__inner .work__contents__wrap .work__contents__left .work__contents__title .work__contents_num {
   color: #41D6BB;
   font-size: 5.2rem;
 }
 
-.project__inner .work__contents__wrap .work__contents__left .work__left__title {
+.home__inner .work__contents__wrap .work__contents__left .work__title__animation__otm, .home__inner .work__contents__wrap .work__contents__left .work__title__animation__bm {
+  opacity: 1;
+  -webkit-animation: 1.8s ease;
+          animation: 1.8s ease;
+}
+
+.home__inner .work__contents__wrap .work__contents__left .work__contents__border__otm, .home__inner .work__contents__wrap .work__contents__left .work__contents__border__bm {
+  background-color: #fff;
+  height: 1px;
+  opacity: 0;
+}
+
+.home__inner .work__contents__wrap .work__contents__left .work__border__animation {
+  opacity: 1;
+  -webkit-animation: sizeScale 1.5s ease;
+          animation: sizeScale 1.5s ease;
+  width: 100%;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}
+
+@keyframes sizeScale {
+  0% {
+    width: 0%;
+  }
+}
+
+.home__inner .work__contents__wrap .work__contents__left .work__left__title {
   margin: 20vh 0;
 }
 
-.project__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__service {
+.home__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__service {
   font-size: 2.4rem;
 }
 
-.project__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__title {
+.home__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__title {
   font-size: 5.0rem;
   margin: 1.0rem 0;
 }
 
-.project__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__purpse {
+.home__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__purpse {
   font-size: 2.0rem;
 }
 
-.project__inner .work__contents__wrap .work__contents__right {
+.home__inner .work__contents__wrap .work__contents__right {
   width: 50%;
   height: 100vh;
 }
 
-.project__inner .work__contents__wrap .work__contents__right #bm__logo {
+.home__inner .work__contents__wrap .work__contents__right #bm__logo {
   display: block;
   width: 20%;
   margin: 40vh auto;
 }
 
-.project__inner .work__contents__wrap .work__contents__right #otm__logo {
+.home__inner .work__contents__wrap .work__contents__right #otm__logo {
   display: block;
   width: 56%;
   margin: 3vh auto;
 }
 
-.project__inner #work__bg__bm {
+.home__inner #work__bg__bm {
   background-color: #EA4E36;
 }
 
-.project__inner #work__bg__otm {
+.home__inner #work__bg__otm {
   background-image: url("../../imgs/mountain.jpg");
 }
 
-.project__inner .work__left__pagecount {
+.work__pagenation {
   position: fixed;
-  display: block;
+  top: 85%;
+  left: 12.0rem;
 }
 
-.project__inner .work__left__pagecount > li {
-  background: #AFAFAF;
-  width: 1.1rem;
-  height: 1.1rem;
-  margin: 0.5rem;
-  border-radius: 50px;
+.work__pagenation a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 1.3rem 0;
+  background-color: #fff;
+  border: 2px solid #6C6C6C;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.work__pagenation a li {
+  list-style: none;
+}
+
+.work__pagenation a .active {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 #work__details {

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://kit.fontawesome.com/0020439f70.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="delighters.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/reset.css">
     <title>About</title>
@@ -53,10 +53,18 @@
                     </div>
                     <p class="about__contents__category">ABOUT</p>
                 </div>
-                <div class="contents__whiiam">
-                    <p id="whoiam__name">MAI GOHARA</p>
-                    <p id="whoiam__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur, alias suscipit consequuntur quas at? Blanditiis, rem? Minus ad vero modi optio aliquam doloremque atque delectus, dicta quisquam, quos quam soluta provident eos nostrum corrupti distinctio dolorem consequatur alias dolores facilis ex magni recusandae enim. Consequuntur excepturi temporibus sunt non?</p>
-                </div>
+                <!-- <div class="contents__whoiam__wrap"> -->
+                    <!-- <div class="contents__photo">
+                        <img src="imgs/profile.jpg">
+                        </div> -->
+                    <div class="contents__whoiam">
+                        <img src="imgs/profile.jpg">
+                        <div class="whoiam__wrap">
+                            <p id="whoiam__name">MAI GOHARA</p>
+                            <p id="whoiam__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur, alias suscipit consequuntur quas at? Blanditiis, rem? Minus ad vero modi optio aliquam doloremque atque delectus, dicta quisquam, quos quam soluta provident eos nostrum corrupti distinctio dolorem consequatur alias dolores facilis ex magni recusandae enim. Consequuntur excepturi temporibus sunt non?</p>    
+                        </div>
+                    <!-- </div> -->
+                    </div>
             </div>
             <div class="about__contents">
                 <div class="about__title__wrap">
@@ -74,7 +82,7 @@
                     </div>
                     <div class="contents__passion">
                         <i class="fas fa-camera"></i>
-                        <p class="passion__title">Photography</p>
+                        <p class="passion__title">Travel</p>
                         <p clsss="passion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur et perferendis perspiciatis totam optio dolor nesciunt non, quia sit quasi voluptates fugit exercitationem dolorem eligendi voluptatem itaque libero magni?</p>
                     </div>
                     <div class="contents__passion">
@@ -92,7 +100,7 @@
                     </div>
                     <p class="about__contents__category">ABOUT</p>
                 </div>
-                <div id="contents__skills__wrap">
+                <div class="contents__skills__wrap">
                     <div class="contents__skills">
                         <img src="imgs/iconfinder_303_Sketch_logo_4375079.svg">
                         <div class="skills__titles">
@@ -100,7 +108,7 @@
                                 <p>HTML & CSS</p>
                                 <p>80%</p>
                             </div>
-                            <div class="skills__wrap"><div class="skills__percentage" id="percentage__html"></div></div> 
+                            <div class="skills__wrap"><div class="skills__percentage__html"></div></div> 
                         </div>
                     </div>
                     <div class="contents__skills">
@@ -111,48 +119,78 @@
                                 <p>60%</p>
                             </div>
                             <div>
-                                <div class="skills__wrap"><div class="skills__percentage" data-delighter id="percentage__js"></div></div>
+                                <div class="skills__wrap"><div class="skills__percentage__js"></div></div>
                             </div> 
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/iconfinder_303_Sketch_logo_4375079.svg">
+                        <img src="imgs/icons8-react-native.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>React</p>
                                 <p>30%</p>
                             </div>
-                            <div class="skills__wrap"><div class="skills__percentage" id="percentage__react"></div></div>
+                            <div class="skills__wrap"><div class="skills__percentage__react"></div></div>
                         </div>
                     </div>
                     <div class="contents__skills">
                         <img src="imgs/iconfinder_303_Sketch_logo_4375079.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
-                                <p>React</p>
+                                <p>Sketch</p>
                                 <p>50%</p>
                             </div>
-                            <div class="skills__wrap"><div class="skills__percentage"></div></div> 
+                            <div class="skills__wrap"><div class="skills__percentage__sketch"></div></div> 
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/iconfinder_303_Sketch_logo_4375079.svg">
+                        <img src="imgs/iconfinder_288_Sass_logo_4375066.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
-                                <p>React</p>
-                                <p>30%</p>
+                                <p>Sass</p>
+                                <p>50%</p>
                             </div>
-                            <div class="skills__wrap"><div class="skills__percentage"></div></div>
+                            <div class="skills__wrap"><div class="skills__percentage__sass"></div></div>
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/iconfinder_303_Sketch_logo_4375079.svg">
+                        <img src="imgs/icons8-adobe-photoshop.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
-                                <p>React</p>
+                                <p>Photoshop</p>
+                                <p>80%</p>
+                            </div>
+                            <div class="skills__wrap"><div class="skills__percentage__ps"></div></div>
+                        </div>
+                    </div>
+                    <div class="contents__skills">
+                        <img src="imgs/icons8-adobe-illustrator.svg">
+                        <div class="skills__titles">
+                            <div class="skills__skilleach">
+                                <p>Illurator</p>
+                                <p>70%</p>
+                            </div>
+                            <div class="skills__wrap"><div class="skills__percentage__ai"></div></div>
+                        </div>
+                    </div>
+                    <div class="contents__skills">
+                        <img src="imgs/iconfinder_Premiere_pro_2529523.svg">
+                        <div class="skills__titles">
+                            <div class="skills__skilleach">
+                                <p>Premiere Pro</p>
+                                <p>70%</p>
+                            </div>
+                            <div class="skills__wrap"><div class="skills__percentage__pr"></div></div>
+                        </div>
+                    </div>
+                    <div class="contents__skills">
+                        <img src="imgs/icons8-adobe-after-effects.svg">
+                        <div class="skills__titles">
+                            <div class="skills__skilleach">
+                                <p>Affter Effect</p>
                                 <p>30%</p>
                             </div>
-                            <div class="skills__wrap"><div class="skills__percentage"></div></div>
+                            <div class="skills__wrap"><div class="skills__percentage__af"></div></div>
                         </div>
                     </div>
                 </div>
@@ -168,10 +206,12 @@
                 <div class="about__contents__contact">
                     <p>MAI GOHARA</p>
                     <div class="contact__info">
-                        <a href="#"><p><i class="fas fa-envelope"></i>maigohara-1103@outlook.jp</p></a>
-                        <a href="#"><p><i class="fas fa-envelope"></i>+1  604 690 0583</p></a>
-                        <a href="#"><p><i class="fas fa-envelope"></i>mai5hara</p></a>
-                        <a href="#"><p><i class="fas fa-envelope"></i>mai5hara_photography</p></a>
+                        <ul>
+                            <li><a href="mailto:maigohara-1103@outlook.jp" target="_blank"><i class="fas fa-envelope"></i><p>maigohara-1103@outlook.jp</p></a></li>
+                            <li><a href="tel: 1-604-690-0583" target="_blank"><i class="fas fa-phone-square"></i><p>+1  604 690 0583</p></a></li>
+                            <li><a href="https://github.com/mai5hara" target="_blank"><i class="fab fa-github"></i><p>mai5hara</p></a></li>
+                            <li><a href="https://www.instagram.com/mai5hara_photography/" target="_blank"><i class="fab fa-instagram"></i><p>mai5hara_photography</p></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
