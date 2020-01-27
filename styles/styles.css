@@ -472,11 +472,13 @@ body {
   }
   #about .about__wrap .about__contents .about__contents__contact {
     display: block;
-    margin: 5.5rem 1.5rem;
+    margin: 5.5rem auto;
+    width: 100%;
   }
   #about .about__wrap .about__contents .about__contents__contact > p {
     font-size: 2.0rem;
     margin-bottom: 1.0rem;
+    margin-right: 0;
   }
   #about .about__wrap .about__contents .about__contents__contact .contact__info .fas, #about .about__wrap .about__contents .about__contents__contact .contact__info .fab {
     font-size: 2.0rem;
@@ -490,6 +492,10 @@ body {
   width: 100%;
   height: 100vh;
   color: #fff;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .home__inner .contents__scroll__wrap {
@@ -533,12 +539,16 @@ body {
   display: flex;
   z-index: 2;
   color: #222222;
+  background: url(../../imgs/background_image.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 0%;
   background-color: #fff;
   scroll-snap-align: start;
 }
 
 .home__inner #home .home__titles {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   margin: 32vh 0 32vh 6.0rem;
 }
@@ -555,14 +565,9 @@ body {
   font-size: 3.2rem;
 }
 
-.home__inner #home .home__scroll__btn_wrap {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .home__inner #home .home__scroll__btn_wrap .home__scroll__btn {
   position: absolute;
-  left: 47.9%;
+  left: 48.2%;
   top: 85%;
   background-color: #41D6BB;
   border-radius: 50%;
@@ -762,14 +767,70 @@ body {
           transform: scale(1.8);
 }
 
+@media screen and (max-width: 767px) {
+  .home__inner #home {
+    background-size: cover;
+  }
+  .home__inner #home .home__titles {
+    margin: 32vh 0 32vh 3rem;
+  }
+  .home__inner #home .home__titles .home__title, .home__inner #home .home__titles .home__name {
+    font-size: 4rem;
+  }
+  .home__inner #home .home__titles .home__subtitle {
+    font-size: 2.7rem;
+  }
+  .home__inner #home .home__scroll__btn_wrap .home__scroll__btn {
+    padding: 2.2rem 0.7rem;
+    font-size: 1.0rem;
+    left: 45%;
+  }
+  .home__inner #home .home__scroll__btn_wrap .home__scroll__btn a span {
+    width: 12px;
+    height: 12px;
+    left: 31px;
+  }
+  .home__inner .work__contents__wrap .work__contents__left {
+    width: 75%;
+    padding: 8.0rem 1.5rem;
+  }
+  .home__inner .work__contents__wrap .work__contents__left .work__contents__title .work__contents_num {
+    font-size: 3.0rem;
+  }
+  .home__inner .work__contents__wrap .work__contents__left .work__contents__title .work__contents__category {
+    font-size: 1.3rem;
+  }
+  .home__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__service {
+    font-size: 2.0rem;
+  }
+  .home__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__title {
+    font-size: 3.5rem;
+  }
+  .home__inner .work__contents__wrap .work__contents__left .work__left__title .work__project__purpse {
+    font-size: 1.6rem;
+  }
+  .home__inner .work__contents__wrap .work__contents__right {
+    width: 25%;
+  }
+  .work__pagenation {
+    left: 2rem;
+  }
+  .work__pagenation a {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 #work__details {
   width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 #work__details .details__topimage {
+  width: 100%;
   height: 16.8rem;
   background-color: rgba(108, 108, 108, 0.8);
-  background-image: url("../../imgs/top_design.jpg");
 }
 
 #work__details .work__details__contents {
@@ -926,5 +987,55 @@ body {
 
 #work__details .work__details__contents .project__design__img img {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #work__details .details__topimage {
+    width: 100%;
+  }
+  #work__details .work__details__contents {
+    width: 90%;
+  }
+  #work__details .work__details__contents .details__project__detail {
+    display: block;
+  }
+  #work__details .work__details__contents .details__project__detail .project__detail__left {
+    width: 100%;
+  }
+  #work__details .work__details__contents .details__project__detail .project__detail__right {
+    width: 100%;
+  }
+  #work__details .work__details__contents a .project__site {
+    width: 70%;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__logotype .design__category__wrap {
+    display: block;
+    width: 100%;
+    margin: 5.0rem auto;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__logotype .design__category__wrap img {
+    width: 70%;
+    margin: 0 auto 3.0rem auto;
+    display: block;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__color .design__category__wrap {
+    display: block;
+    width: 100%;
+    margin: 5.0rem auto;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__color .design__category__wrap .design__color__details {
+    margin-bottom: 3.0rem;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__color .design__category__wrap .design__color__details .color__details__palet {
+    width: 162px;
+    margin: 0 auto;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__typo .design__category__wrap {
+    display: block;
+    width: 100%;
+  }
+  #work__details .work__details__contents .details__project__design .project__design__typo .design__category__wrap .design__typo__wrap {
+    margin-bottom: 3.0rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

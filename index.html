@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
     <script src="https://kit.fontawesome.com/0020439f70.js" crossorigin="anonymous"></script>
+    <!-- <script src="script/fullpage.min.js"></script> -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/reset.css">
-    <title>Mai Gohara</title>
+    <title>Work</title>
 </head>
 <body>
     <header>
@@ -27,26 +29,25 @@
                             <li class="tab__about__list"><a href="about.html">ABOUT</a></li>
                             <li class="tab__work__list"><a href="#">WORK</a>
                                 <ul class="work__list">
-                                    <li><a href="#">Brush Map</a></li>
+                                    <li><a href="brushmap.html">Brush Map</a></li>
                                     <li><a href="#">On The Mountain</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="nav__icon">
-                        <a href ="#"><i class="fab fa-github"></i></a>
-                        <a href ="#"><i class="fab fa-instagram"></i></a>
-                        <a href ="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mai5hara" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/mai5hara_photography/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div id="home">
+    <!-- <div id="home">
         <div class="home__titles">
             <h1 class="home__title" data-wait="3000" data-words='["HELLO.","WELCOME TO MY WEBSITE."]'></h1>
             <h2 class="home__name">I AM MAI GOHARA</h2class="home__title">
-            <!-- <span>Front - End Developer / UI designer</span> -->
             <p class="home__subtitle">Front-end developer / UI designer</p>
         </div>
         <div class="home__scroll__btn_wrap">
@@ -55,6 +56,67 @@
             </div>
         </div>
     </div>
+    <div class="contents__scroll__wrap">
+        <div class="contents__scroll">
+            <span></span>
+            <span></span>
+        </div>
+    </div> -->
+    <main>
+        <div class="home__inner">
+                <div id="home">
+                    <div class="home__titles">
+                        <h1 class="home__title" data-wait="3000" data-words='["HELLO.","WELCOME."]'></h1>
+                        <h2 class="home__name">I AM MAI GOHARA</h2class="home__title">
+                        <p class="home__subtitle">Front-End developer / UI designer</p>
+                    </div>
+                    <div class="home__scroll__btn_wrap">
+                        <div class="home__scroll__btn">
+                            <a href="#">SCROLL<span></span></a>
+                        </div>
+                    </div>
+                </div>
+                <section class="work__contents__wrap brushmap" id="work__bg__bm" id="section1">
+                    <div class="work__contents__left">
+                        <div class="work__contents__title">
+                            <p class="work__contents_num">01</p>
+                            <p class="work__contents__category">WORK</p>
+                        </div>
+                        <div class="work__contents__border__bm work__border__animation"></div>
+                        <div class="work__left__title">
+                            <p class="work__project__service">Web servise</p>
+                            <p class="work__project__title">Brush Map</p>
+                            <p class="work__project__purpse">Study programming web site for beginners</p class="work__project__title">
+                        </div>
+                    </div>
+                    <div class="work__contents__right">
+                        <img id="bm__logo" src="imgs/brushmap_logo_whitever.png">
+                    </div>
+                </section>
+                <section class="work__contents__wrap onthemountain" id="work__bg__otm" id="section2">
+                    <div class="work__contents__left">
+                        <div class="work__contents__title">
+                            <p class="work__contents_num">02</p>
+                            <p class="work__contents__category">WORK</p>
+                        </div>
+                        <div class="work__contents__border__otm work__border__animation"></div>
+                        <div class="work__left__title">
+                            <p class="work__project__service">Web servise / Mobile servise</p>
+                            <p class="work__project__title">On The Mountain</p>
+                            <p class="work__project__purpse">Recipe suggestion app for hiking</p>
+                        </div>
+                    </div>
+                    <div class="work__contents__right">
+                        <img id="otm__logo" src="imgs/iphone.png">
+                    </div>
+                </section>
+        </div>
+        <ul class="work__pagenation" id="pagenation">
+            <a id="pagenation1" href="#section1"><li></li></a>
+            <a id="pagenation2" href="#section2"><li></li></a>
+        </ul>
+    </main>
+    <!-- <script src="script/fullpage.min.js"></script> -->
     <script src="script/main.js"></script>
 </body>
 </html>

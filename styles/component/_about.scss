@@ -293,11 +293,13 @@
                 }
                 .about__contents__contact {
                     display: block;
-                    margin: 5.5rem 1.5rem;
+                    margin: 5.5rem auto;
+                    width: 100%;
 
                     >p {
                         font-size: 2.0rem;
                         margin-bottom: 1.0rem;
+                        margin-right: 0;
                     }
 
                     .contact__info {
