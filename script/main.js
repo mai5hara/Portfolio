@@ -1,5 +1,5 @@
 /*=============================
-     index.html navbar
+    index.html navbar
 =============================*/
 
 // navActiveMenu = () => {
@@ -16,7 +16,7 @@
 
 
 /*=============================
-     index.html hometitle
+    index.html hometitle
 =============================*/
 
 class TypeWriter {
@@ -73,163 +73,171 @@ function init() {
 }
 
 /*=============================
-     ScrollTrogger
+    ScrollTrogger
 =============================*/
 
 /*------ about skills -------*/
-let controller = new ScrollMagic.Controller();
+// let controller = new ScrollMagic.Controller();
 
-toggleHtml = () => {
-let scene = new ScrollMagic.Scene({
-    triggerElement: '.skills__percentage__html',
-    offset: -430
-})
-    .setClassToggle('.skills__percentage__html', 'percentage__html')
-    .addTo(controller);
-}
+// toggleHtml = () => {
+// let scene = new ScrollMagic.Scene({
+//     triggerElement: '.skills__percentage__html',
+//     offset: -430
+// })
+//     .setClassToggle('.skills__percentage__html', 'percentage__html')
+//     .addTo(controller);
+// }
 
-togglePs = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__ps',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__ps', 'percentage__ps')
-        .addTo(controller);
-    }
+// togglePs = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__ps',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__ps', 'percentage__ps')
+//         .addTo(controller);
+//     }
 
-toggleAi = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__ai',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__ai', 'percentage__ai')
-        .addTo(controller);
-    }
+// toggleAi = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__ai',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__ai', 'percentage__ai')
+//         .addTo(controller);
+//     }
 
-togglePr = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__pr',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__pr', 'percentage__pr')
-        .addTo(controller);
-    }
+// togglePr = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__pr',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__pr', 'percentage__pr')
+//         .addTo(controller);
+//     }
 
-toggleJs = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__js',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__js', 'percentage__js')
-        .addTo(controller);
-    }
+// toggleJs = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__js',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__js', 'percentage__js')
+//         .addTo(controller);
+//     }
 
-toggleSketch = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__sketch',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__sketch', 'percentage__sketch')
-        .addTo(controller);
-    }
+// toggleSketch = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__sketch',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__sketch', 'percentage__sketch')
+//         .addTo(controller);
+//     }
 
-toggleSass = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__sass',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__sass', 'percentage__sass')
-        .addTo(controller);
-    }
+// toggleSass = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__sass',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__sass', 'percentage__sass')
+//         .addTo(controller);
+//     }
 
-toggleReact = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__react',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__react', 'percentage__react')
-        .addTo(controller);
-    }
+// toggleReact = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__react',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__react', 'percentage__react')
+//         .addTo(controller);
+//     }
 
-toggleAf = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.skills__percentage__af',
-        offset: -430
-    })
-        .setClassToggle('.skills__percentage__af', 'percentage__af')
-        .addTo(controller);
-    }
+// toggleAf = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.skills__percentage__af',
+//         offset: -430
+//     })
+//         .setClassToggle('.skills__percentage__af', 'percentage__af')
+//         .addTo(controller);
+//     }
 
-toggleAi();
-togglePr();
-toggleHtml();
-togglePs();
-toggleJs();
-toggleSketch();
-toggleSass();
-toggleReact();
-toggleAf();
+// toggleAi();
+// togglePr();
+// toggleHtml();
+// togglePs();
+// toggleJs();
+// toggleSketch();
+// toggleSass();
+// toggleReact();
+// toggleAf();
 
 
 /*------ work title -------*/
-toggleProjectTitle = () => {
-    let scene = new ScrollMagic.Scene({
-        triggerElement: '.work__contents__border__otm',
-        triggerHook:　"onEnter"
-    })
-        .setClassToggle('.work__contents__border__otm', 'work__contents__border__otm')
-        .addTo(controller);
-    }
+// toggleProjectTitle = () => {
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.work__contents__border__otm',
+//         triggerHook:　"onEnter"
+//     })
+//         .setClassToggle('.work__contents__border__otm', 'work__contents__border__otm')
+//         .addTo(controller);
+//     }
 
-toggleProjectTitle();
+// toggleProjectTitle();
 
 /*=============================
-     Smooth scroll
+    Smooth scroll
 =============================*/
 
-// const workPagenation = document.querySelectorAll(".work__pagenation a");
-// const pagers = Array.prototype.slice.call(workPagenation, 0);	
-// workPagenation.forEach(pagenation => {
-//     pagenation.addEventListener("click", e => {
-//         e.preventDefault();
-//         const targetId = e.target.hash;
-//         const target = document.querySelector(targetId);
-//         target.scrollIntoView({ behavior: "smooth"});
-//     });
-// });
+const workPagenation = document.querySelectorAll(".work__pagenation a");
 
-// const sectionsList = document.querySelectorAll(".work__contents__wrap");
-// const sections = Array.prototype.slice.call(sectionsList, 0);	
-// const observerRoot = document.querySelector(".home__inner");
-// const options = {
-//     root: observerRoot,
-//     rootMargin: "-50% 0px",
-//     threshold: 0
-// };
+workPagenation.forEach(pagenation => {
+    pagenation.addEventListener("click", e => {
+        e.preventDefault();
+        const targetId = e.target.hash;
+        console.log(targetId);
 
-// const observer = new IntersectionObserver(doWhenIntersect, options);
-// sections.forEach(section => {
-//     observer.observe(section);
-// });
+        const target = document.querySelector(targetId);
+        console.log(target);
 
-// function doWhenIntersect(entriesList) {
-//     const entries = Array.prototype.slice.call(entriesList, 0);	
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//         activatePagenation(entry.target);
-//         }
-//     });
-// }
+        target.scrollIntoView({ behavior: "smooth"});
+    });
+});
 
-// function activatePagenation(element) {
-//     const currentActiveIndex = document.querySelector("#pagination .active");
-//     if (currentActiveIndex !== null) {
-//         currentActiveIndex.classList.remove("active");
+const sections = document.querySelectorAll(".work__section");	
+const observerRoot = document.querySelector(".home__inner");
+const options = {
+    root: observerRoot,
+    rootMargin: "-50% 0px",
+    threshold: 0
+};
+
+const observer = new IntersectionObserver(doWhenIntersect, options);
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+function doWhenIntersect(entriesList) {
+    const entries = Array.prototype.slice.call(entriesList, 0);	
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        activatePagenation(entry.target);
+        }
+    });
+}
+
+function activatePagenation(element) {
+    const currentActiveIndex = document.querySelector("#pagenation .active");
+    if (currentActiveIndex !== null) {
+        currentActiveIndex.classList.remove("active");
+    }
+    const newActiveIndex = document.querySelector(`a[href='#${element.id}']`);
+    newActiveIndex.classList.add("active");
+}
+
+// function animationTorigger(element) {
+//     const activeAnimation = document.querySelector(".work__contents__border .work__border__animation");
+//     if(activeAnimation !== null) {
+//         activeAnimation.classList.remove("work__border__animation");
+//     } else {
+//         activeAnimation.classList.add("work__border__animation");
 //     }
-//     const newActiveIndex = document.querySelector("a[href='#" + element.id + "']");
-//     newActiveIndex.classList.add("active");
 // }
-
-new fullpage('.home__inner',{
-    autoScrolling: true,
-})

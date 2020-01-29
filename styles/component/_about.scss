@@ -51,7 +51,7 @@
 
             .contents__whoiam {
                 display: flex;
-                margin: 12.0rem 30.0rem;
+                margin: 12.0rem 10.0rem;
                 align-items: center;
 
                 img {
@@ -292,13 +292,13 @@
                     }
                 }
                 .about__contents__contact {
-                    display: block;
-                    margin: 5.5rem auto;
+                    flex-direction: column;
+                    margin: 4.5rem auto;
                     width: 100%;
 
                     >p {
                         font-size: 2.0rem;
-                        margin-bottom: 1.0rem;
+                        margin-bottom: 2.0rem;
                         margin-right: 0;
                     }
 

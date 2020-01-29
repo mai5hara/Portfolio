@@ -41,7 +41,7 @@
         }
     }
 
-    #home {
+    .home {
         // img {
         //     width: 100%;
         //     height: auto;
@@ -174,7 +174,7 @@
                 animation: 1.8s ease;
             }
 
-            .work__contents__border__otm, .work__contents__border__bm {
+            .work__contents__border {
                 background-color: #fff;
                 height: 1px;
                 // width: 100%;
@@ -230,11 +230,11 @@
         }
     }
 
-    #work__bg__bm {
+    .work__bg__bm {
         background-color: #EA4E36;
     }
 
-    #work__bg__otm {
+    .work__bg__otm {
         background-image : url('../../imgs/mountain.jpg');
     }
 
@@ -253,35 +253,33 @@
 .work__pagenation {
     position: fixed;
     // position: absolute;
-    top: 85%;
-    left: 12.0rem;
-    // position: fixed;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+        // position: fixed;
     // background: red;
     // z-index: 5;
 
     a {
         display: block;
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
         margin:1.3rem 0;
-        background-color: #fff;
-        border: 2px solid $light-gray;
+        // background-color: #fff;
+        border: 2px solid #fff;
         border-radius: 50%;
-        transition: transform 0.2s;
-
-        li {
-            list-style: none;
-        }
-
-        .active {
-            transform: scale(1.8);
-        }
+        transition: transform 0.2s;   
+    }
+    .active {
+        // transform: scale(1.4);
+        background-color: #fff;
     }
 }
 
+
 @include mq('sp') {
     .home__inner {
-        #home {
+        .home {
             background-size: cover;
 
             .home__titles {
