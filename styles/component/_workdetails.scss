@@ -7,31 +7,84 @@
         // margin: 0 auto;
 
         .details__topimage {
+            margin-bottom: 5.5rem;
             width: 100%;
             height: 23.0rem;
-            background-color: rgba($light-gray,0.8);
-            background-image: url('../../imgs/top_design.jpg');
-            background-position: top 35% right 50%;
-            background-size: 75%;
             opacity: 0.7;
+        }
+
+        #topimage__bm {
+            background-image: url('../../imgs/top_design3.jpg');
+            background-position: top 35% right 50%;
+            background-size: cover;
+        }
+
+        #topimage__otm {
+            background-image: url('../../imgs/mountain.jpg');
+            background-position: top 48% right 80%;
+            background-size: 100%;
+        }
+
+        #topimage__egg {
+            background-image: url('../../imgs/egg_toppage.png');
+            background-position: top 80% right 50%;
+            background-size: 50%;
+            background-color: #ffb356;
+        }
+
+        #topimage__weather {
+            background-image: url('../../imgs/weather_toppage.png');
+            background-position: top 80% right 50%;
+            background-size: 50%;
+            background-color: #FFF3E6;
+        }
+
+        #topimage__woksinjapan {
+            background-image: url('../../imgs/worksinjapan_bg.jpg');
+            background-position: top 48% right 80%;
+            background-size: 100%;
+        }
+
+        #topimage__skillsshowcase {
+            background-color: #5695c8;
+            background-image: url('../../imgs/skillsshowcase_bglogo.png');
+            background-position: top 50% right 50%;
+            background-size: 18%;
         }
     
         .work__details__contents {
             width: 60%;
-            margin: 0 auto;
+            margin: 0 auto 5.0rem auto;
     
             h2 {
                 margin-bottom: 3.2rem;
             }
+
+            .workdetails__title {
+                margin: 4.0rem 0 5.5rem 0;
+                text-align: center;
+                padding-bottom: 0.7rem;
+                border-bottom: 1px solid #222222;
+                font-size: 3.0rem;
+            }
+
+            .workdetails__subtitle__top {
+                margin: 7.0rem 0 2.0rem 0;
+            }
+
+            .workdetails__subtitle, .workdetails__subtitle__worksinjapan {
+                margin: 10.0rem 0 2.0rem 0;
+                font-size: 2.1rem;       
+            }
     
             .details__project__detail {
                 display: flex;
-                margin: 5.5rem 0;
+                margin: 0 0 1.5rem 0;
     
                 .project__detail__right, .project__detail__left {
     
                     p {
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
                         margin-bottom: 1.8rem;
     
                         span {
@@ -61,7 +114,7 @@
                     background-color: $light-green;
                     border-radius: 50px;
                     width: 30%;
-                    margin: 3.5rem auto 5.0rem auto;
+                    margin: 5.5rem auto 5.5rem auto;
                     height: 4.3rem;
                     text-align: center;
         
@@ -78,8 +131,39 @@
                     background-color: darken($light-green,10%);
                 }
             }
-    
+
             .details__project__design {
+
+                .workinjapan__images__wrap {
+                    display: table-row;
+
+                    a {
+                        .workinjapan__images {
+                            width: 32%;
+                            margin: 0.4rem;
+                        }
+                    }
+                }
+
+                .workinjapan__images__center {
+                    display: flex;
+                    justify-content: center;
+
+                    // .workinjapan__images__yuru {
+                    //     width: 70%;
+                    //     height: auto;
+                    // }
+                    .workinjapan__images__yuru {
+                        width: 70%;
+                        height: auto;
+                    }
+
+                    .workinjapan__images__beyond {
+                        width: 90%;
+                        height: auto;
+                    }
+                }
+                
                 
                 .project__design__category {
                     color: $off-white;
@@ -92,14 +176,58 @@
                     justify-content: center;
     
                     img {
-                        width: 35%;
+                        width: 30%;
                     }
     
                     .img__left {
-                        margin-right: 7.0rem;
+                        margin-right: 9.0rem;
                     }
                 }
             }
+
+            .details__project__demo {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 90%;
+                }
+
+                .demo__src__btn {
+                    padding: 0 15.0rem;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-around;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        display: block;
+                        width:35%;
+
+                        .demo__btn, .src__btn {
+                            background-color: $light-green;
+                            border-radius: 50px;
+                            // padding: 1.0% 12.0%;
+                            height: 4.2rem;
+                            margin: 5.5rem auto 5.5rem auto;
+                            text-align: center;
+
+                            p {
+                                align-items: center;
+                                color: #fff;
+                                font-size: 2.0rem;
+                                line-height: 4.2rem;
+                                vertical-align: middle;
+                            }
+                        }
+                        .demo__btn:hover, .src__btn:hover {
+                            background-color: darken($light-green,10%);
+                        }
+                    }
+                }
+            }
+
+        }
     
             .project__design__color {
     
@@ -125,6 +253,27 @@
             
                         #palet3 {
                             background-color: #EAEAEA;
+                        }
+
+                        #palet1_egg {
+                            background-color: #FFB356;
+                        }
+
+                        #palet2_egg {
+                            border: 1px solid #eaeaea;
+                            background-color: #FFFFFF;
+                        }
+
+                        #palet3_egg {
+                            background-color: #BA4700;
+                        }
+
+                        #palet1_weather {
+                            background-color: #FFF3E6;
+                        }
+
+                        #palet2_weather {
+                            background-color: #636363;
                         }
 
                         p {
@@ -158,8 +307,47 @@
                     #font__rockwell {
                         font-family: 'Roboto Slab', serif;
                     }
+
+                    #font__futura {
+                        font-family: 'Futura';
+                    }
+
+                    #font__montserrat {
+                        font-family: "Montserrat",sans-serif;;
+                    }
                 }
             }
+
+            .design__img__wrap {
+                p {
+                    margin-bottom: 2.0rem;
+                }
+                #project__design__img__otm {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+    
+                        img {
+                            border: 1.5px solid rgb(202, 202, 202);
+                            margin: 0.8rem 0.5rem;
+                            width: 23%;
+                        }
+                }
+            }
+
+            #project__design__img__hangyoball {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 70%
+                }
+            }
+
+            .project__design__img__responsive {
+                display: flex;
+                justify-content: space-around;
+            }
+
             .project__design__img {
                 margin-bottom: 5.0rem;
     
@@ -171,7 +359,10 @@
                     width: 100%;
                 }
             }
-        }
+
+            
+        
+        
         .prev__next__btns {
             transform: rotate(90deg);
             width: 15.0rem;
@@ -184,6 +375,7 @@
                 color: $off-white;
                 position: relative;
                 cursor: pointer;
+                text-decoration: none;
             }
 
             .prev__btn:hover {
@@ -192,6 +384,7 @@
 
             .btn__prev {
                 margin-right: 1.0rem;
+
                 .fas {
                     transform: rotate(-90deg);
                 }
@@ -205,8 +398,8 @@
 
         .project__back__btn__wrap {
             position: relative;
-            top: 82%;
-            left: 92%;
+            bottom: 8%;
+            right: 4%;
             position: fixed;
 
             .project__back__btn {
@@ -215,34 +408,76 @@
                 height: 7.0rem;
                 border-radius: 100%;
                 cursor: pointer;
+                z-index: 5;
 
                 >span {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     width: 2px;
-                    height: 3.0rem;
+                    height: 8px;
+                    margin: -6px 0 0;
                     background-color: #fff;
-                    transform: rotate(-45deg);
+                    transform: rotate(45deg);
                 }
 
                 >span:last-child {
                     margin: -1px 0 0;
-                    transform: rotate(45deg);
+                    transform: rotate(-45deg);
                 }
             }
             .project__back__btn:hover {
                 background-color: darken($light-green, 10%);
             }
         }
-
-    
 }
+
+@include mq('tab') {
+    #work__details {
+        .work__details__contents {
+            .details__project__design {
+                .workinjapan__images__wrap {
+                    display: table-row;
+    
+                    a {
+                        .workinjapan__images {
+                            width: 48%;
+                            margin: 0.4rem;
+                        }
+                    }
+                }
+                .fire__wrame__wrap {
+                    img {
+                        margin: 0.8rem 0.3rem;
+                        width: 31%;
+                        height:auto;
+                    }
+                }
+            }
+            .details__project__demo {
+                .demo__src__btn {
+                    padding: 0 6.0rem;
+                    a {
+                        width: 45%;
+                        .demo__btn, .src__btn {
+                            p {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
 
 @include mq('sp') {
     #work__details {
+        #topimage__skillsshowcase {
+            background-size: 40%;
+        }
         .details__topimage {
-            margin-top: 4.0rem;
+            margin-top: 6.0rem;
             width: 100%;
             background-size: cover;
             height: 20.0rem;
@@ -265,6 +500,22 @@
                 }
             }
             .details__project__design {
+                .workinjapan__images__wrap {    
+                    a {
+                        .workinjapan__images {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .workinjapan__images__center {
+                    .workinjapan__images__yuru {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+                
                 .project__design__logotype {
                     .design__category__wrap {
                         display: block;
@@ -276,9 +527,6 @@
                             margin: 0 auto 3.0rem auto;
                             display: block;
                         }
-                        // .img__left {
-                        //     margin-right: 0;
-                        // }
                     }
                 }
                 .project__design__color {
@@ -307,8 +555,57 @@
                         }
                     }
                 }
+                .fire__wrame__wrap {
+                    object-fit: contain;
+                    img {
+                        width: 100%;
+                        height:auto;
+                    }
+                }
+                
             }
-            
+
+            .design__img__wrap {
+                #project__design__img__otm {
+                    display: table-row;
+                    img {
+                        width: 100%;
+                        margin: 1.0rem 0;
+                    }
+                }
+            }
+
+
+            #project__design__img__hangyoball {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .details__project__demo {
+                img {
+                    width: 100%;
+                }
+                .demo__src__btn {
+                    padding: 0;
+                }
+            }
+            .workdetails__subtitle {
+                margin: 0 0 2.0rem 0;
+            }
+            .workdetails__subtitle__worksinjapan {
+                margin: 5.0rem 0 2.0rem 0;
+            }
+        }
+        .project__back__btn__wrap {
+            bottom: 4%;
+            right: 5%;
+
+            .project__back__btn {
+                width: 6.0rem;
+                height: 6.0rem;
+            }
         }
 
     }

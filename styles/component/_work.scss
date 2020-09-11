@@ -19,7 +19,6 @@
             width: 65px;
             height: 65px;
             border-radius: 100%;
-            // bottom: 60px;
             cursor: pointer;
             overflow: hidden;
             background-color: $light-green;
@@ -42,12 +41,6 @@
     }
 
     .home {
-        // img {
-        //     width: 100%;
-        //     height: auto;
-        //     z-index: -1;
-
-        // }
 
         height: 100vh;
         width: 100%;
@@ -64,12 +57,10 @@
         .home__titles {
             width: 100%;
             height: 100%;
-            // display: fixed;
             margin: 32vh 0 32vh 6.0rem;
 
             .home__title, .home__name {
                 font-size: 7.5rem;
-                // margin: 30vh 0;
             }
             .home__title__add {
                 border-right: 0.2rem solid #777;
@@ -77,20 +68,16 @@
             
             .home__subtitle {
                 font-size: 3.2rem;
-                // margin: 48vh 0;
             }
         }
 
         .home__scroll__btn_wrap {
-            // margin: 0 auto;
-            // width: 100%;
 
             .home__scroll__btn {
                 position: absolute;
-                left: 48.2%;
-                top: 85%;
+                left: 48%;
+                bottom: 4%;
                 background-color: $light-green;
-                // border: 2px solid $light-green;
                 border-radius:50%;
                 padding: 2.4rem .6rem;
                 margin: 0 auto;
@@ -161,39 +148,51 @@
                 justify-content: space-between;
                 align-items: baseline;
                 padding-bottom: 0.5rem;
-                // opacity: 0;
 
                 .work__contents_num {
-                    color: $light-green;
+                    // color: $light-green;
                     font-size: $l-font;
+                    // opacity: 0;
                 }
-            }
 
-            .work__title__animation__otm, .work__title__animation__bm {
-                opacity: 1;
-                animation: 1.8s ease;
+                .work__category__animation {
+                    // opacity: 1;
+                    color: red;
+                    animation: fadein 1s ease 1s;
+                    animation-fill-mode: forwards;
+                }
+                @keyframes fadein {
+                    0% { color: red }
+                    100% { color: green }
+                    
+                }
             }
 
             .work__contents__border {
                 background-color: #fff;
                 height: 1px;
                 // width: 100%;
-                opacity: 0;
+                opacity: 1;
             }
 
-            .work__border__animation {
-                opacity: 1;
-                animation: sizeScale 1.5s ease;
-                width: 100%;
-                transition-delay: 3s;
-            }
+            // .work__border__animation {
+            //     opacity: 1;
+            //     animation: sizeScale 2.5s ease 1s;
+            //     width: 100%;
+            //     // transition-delay: 5s;
+            // }
         
             @keyframes sizeScale {
                 0% { width:0%}
             }
 
             .work__left__title {
+                
+
+                // opacity: 0;
+                transition: 0.2s;
                 margin: 20vh 0;
+                animation-name: example;
 
                 .work__project__service {
                     font-size: 2.4rem;
@@ -207,8 +206,51 @@
                 .work__project__purpse {
                     font-size: 2.0rem;
                 }
+
+                a {
+                    text-decoration: none;
+
+                    .work__project__viewdetails {
+                        margin-top: 3.0rem;
+                        width: 30%;
+                        color: #777;
+                        border-radius: 50px;
+                        background-color: #fff;
+                        height: 4.2rem;
+                        text-align: center;
+    
+                        p {
+                            align-items: center;
+                            line-height: 4.3rem;
+                            // border: 2px solid #777;
+                        }
+                    }
+    
+                    .work__project__viewdetails:hover {
+                        cursor: pointer;
+                        background-color: rgb(223, 223, 223);
+                    }
+                }
+
+                
+
+                
+                // .work__title__animation {
+                //     opacity: 1;
+                //     transition: fadein all cubic-bezier(.666,0,.333,1);
+                // }
             }
 
+            @-webkit-keyframes example {
+                from {opacity:  0}
+                to {opacity:  1}
+              }
+              
+              /* Standard syntax */
+              @keyframes example {
+                from {opacity:  0}
+                to {opacity:  1}
+              }
         }
 
 
@@ -222,6 +264,12 @@
                 margin: 40vh auto;
             }
 
+            #skills__logo {
+                display: block;
+                width:40%;
+                margin: 40vh auto;
+            }
+
             #otm__logo {
                 display: block;
                 width: 56%;
@@ -232,11 +280,54 @@
 
     .work__bg__bm {
         background-color: #EA4E36;
+        background-image: url('../../imgs/brushmap_logo_whitever.png');
+        background-position: top 51% right 22%;
+        background-size: 10%;
     }
 
     .work__bg__otm {
+        // background-position: top 50% right 50%;
         background-image : url('../../imgs/mountain.jpg');
+        background-size: cover;
     }
+
+    .work__bg__egg {
+        // @extend .work__bg__bm;
+        background-position: top 51% right 22%;
+        background-size: 10%;
+        background-color: #ffb356;
+        background-image : url('../../imgs/super_soft_boiled_egg.svg');
+    }
+
+    .work__bg__weather {
+        // @extend .work__bg__bm;
+        background-position: top 51% right 22%;
+        background-size: 10%;
+        background-color: #fdf3e7;
+        background-image : url('../../imgs/sunny.svg');
+    }
+
+    .work__bg__movie {
+        background-color: #24589E;
+        background-image : url('../../imgs/movie.png');
+        background-position: top 51% right 22%;
+        background-size: 10%;
+    }
+
+    .work__bg__worksinjapan {
+        background-position: top 10% right 15%;
+        background-image : url('../../imgs/worksinjapan_bg2.jpg');
+        background-size: cover;
+    }
+
+    .work__bg__skillsshowcase {
+        background-color: #5695c8;
+        background-image: url('../../imgs/skillsshowcase_bglogo.png');
+        background-position: top 51% right 22%;
+        background-size: 20%;
+    }
+
+    
 
         // >li {
         //     background: #AFAFAF;
@@ -275,7 +366,115 @@
         background-color: #fff;
     }
 }
+.project__go__btn__wrap {
+    position: relative;
+    top: 86%;
+    left: 93%;
+    position: fixed;
 
+    .project__go__btn {
+        background-color: $light-green;
+        width: 7.0rem;
+        height: 7.0rem;
+        border-radius: 100%;
+        cursor: pointer;
+
+        >span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 8px;
+            margin: -6px 0 0;
+            background-color: #fff;
+            transform: rotate(-45deg);
+        }
+
+        >span:last-child {
+            margin: -1px 0 0;
+            transform: rotate(45deg);
+        }
+    }
+    .project__go__btn:hover {
+        background-color: darken($light-green, 10%);
+    }
+}
+
+@include mq('tab') {
+    .home__inner {
+        .home {
+            .home__titles {
+                margin: 32vh 0 32vh 3rem;
+
+                .home__title, .home__name {
+                    font-size: 5.0rem;
+                }
+                .home__subtitle {
+                    font-size: 3.0rem;
+                }
+            }
+            .home__scroll__btn_wrap {
+                .home__scroll__btn {
+                    bottom: 5%;
+                    left: 46%;
+                    padding: 2.0rem 0.5rem;
+                    font-size: 1.0rem;
+                    a {
+                        span {
+                            width: 15px;
+                            height: 15px;
+                            left: 57%;
+                        }
+                    }
+                }
+            }
+        }
+        .work__contents__wrap {
+            .work__contents__left {
+                .work__left__title {
+                    margin: 10vh 0;
+
+                    .work__project__service {
+                        font-size: 2.2rem;
+                    }
+                    .work__project__title {
+                        font-size: 4.2rem;
+                    }
+                    .work__project__purpse {
+                        font-size: 1.8rem;
+                    }
+                    a {
+                        .work__project__viewdetails {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .work__bg__bm {
+            background-position: top 50% right 16%;
+            background-size: 25%;
+        }
+
+        .work__bg__egg {
+            // @extend .work__bg__bm;
+            background-position: top 50% right 16%;
+            background-size: 25%;
+        }
+
+        .work__bg__weather {
+            background-position: top 50% right 16%;
+            background-size: 25%;
+        }
+
+        .work__bg__skillsshowcase {
+            // @extend .work__bg__bm;
+            background-position: top 50% right 16%;
+            background-size: 25%;
+        }
+    }
+}
 
 @include mq('sp') {
     .home__inner {
@@ -283,7 +482,7 @@
             background-size: cover;
 
             .home__titles {
-                margin: 32vh 0 32vh 3rem;
+                margin: 30vh 0 30vh 3rem;
 
                 .home__title, .home__name {
                     font-size: 4rem;
@@ -297,6 +496,7 @@
                     padding: 2.2rem 0.7rem;
                     font-size: 1.0rem;
                     left: 45%;
+                    bottom: 0%;
                     a {
                         span {
                             width: 12px;
@@ -309,6 +509,7 @@
         }
 
         .work__contents__wrap {
+
             .work__contents__left {
                 width: 75%;
                 padding: 8.0rem 1.5rem;
@@ -323,13 +524,13 @@
                 }
                 .work__left__title {
                     .work__project__service {
-                        font-size: 2.0rem;
+                        font-size: 1.6rem;
                     }
                     .work__project__title {
-                        font-size: 3.5rem;
+                        font-size: 2.7rem;
                     }
                     .work__project__purpse {
-                        font-size: 1.6rem;
+                        font-size: 1.3rem;
                     }
                 }
             }
@@ -337,9 +538,28 @@
                 width: 25%;
             }
         }
+        .work__bg__bm {
+            background-position: top 51% right 35%;
+            background-size: 60%;
+        }
+
+        .work__bg__egg {
+            background-position: top 51% right 35%;
+            background-size: 70%;
+        }
+
+        .work__bg__weather {
+            background-position: top 51% right 35%;
+            background-size: 70%;
+        }
+
+        .work__bg__skillsshowcase {
+            background-position: top 51% right 22%;
+            background-size: 60%;
+        }
     }
     .work__pagenation {
-        left: 2rem;
+        right: 2rem;
         a {
             width: 12px;
             height: 12px;

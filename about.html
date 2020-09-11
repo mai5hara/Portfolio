@@ -6,43 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="script/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/0020439f70.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".header").load("header.html");
+        });
+    </script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/reset.css">
     <title>About</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="navbar__side">
-                <div class="nav__menu__hamb">
-                    <div class="nav__menu__bar1"></div>
-                    <div class="nav__menu__bar2"></div>
-                    <div class="nav__menu__bar3"></div>
-                </div>
-            </div>
-            <div class="nav__nemu__container">
-                <div class="nav__menu__list__wrap">
-                    <div class="nav__menu__list">
-                        <ul class="menu__tab__list">
-                            <li class="tab__about__list"><a href="#">ABOUT</a></li>
-                            <li class="tab__work__list"><a href="#">WORK</a>
-                                <ul class="work__list">
-                                    <li><a href="#">Brush Map</a></li>
-                                    <li><a href="#">On The Mountain</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav__icon">
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header class="header"></header>
     <main id="about">
         <div class="about__wrap">
             <div class="about__contents">
@@ -51,7 +27,6 @@
                         <p class="about__contens__num">01</p>
                         <p class="about__contens__title">WHO I AM</p>
                     </div>
-                    <p class="about__contents__category">ABOUT</p>
                 </div>
                 <!-- <div class="contents__whoiam__wrap"> -->
                     <!-- <div class="contents__photo">
@@ -61,7 +36,7 @@
                         <img src="imgs/profile.jpg">
                         <div class="whoiam__wrap">
                             <p id="whoiam__name">MAI GOHARA</p>
-                            <p id="whoiam__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur, alias suscipit consequuntur quas at? Blanditiis, rem? Minus ad vero modi optio aliquam doloremque atque delectus, dicta quisquam, quos quam soluta provident eos nostrum corrupti distinctio dolorem consequatur alias dolores facilis ex magni recusandae enim. Consequuntur excepturi temporibus sunt non?</p>    
+                            <p id="whoiam__text">I'm a Front - End Developer and UI Designer from Japan live in Vancouver. I'm focusing on create comfortable and clean design combining my skills. I am studying UX recently to develop according to the needs of users.</p>    
                         </div>
                     <!-- </div> -->
                     </div>
@@ -72,23 +47,47 @@
                         <p class="about__contens__num">02</p>
                         <p class="about__contens__title">PASSION</p>
                     </div>
-                    <p class="about__contents__category">ABOUT</p>
                 </div>              
                 <div class="contents__passion__wrap">
                     <div class="contents__passion">
-                        <i class="fas fa-camera"></i>
+                        <i class="passion_logo_bg fas fa-camera"></i>
                         <p class="passion__title">Photography</p>
-                        <p class="passion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur et perferendis perspiciatis totam optio dolor nesciunt non, quia sit quasi voluptates fugit exercitationem dolorem eligendi voluptatem itaque libero magni?</p>
+                        <p class="passion__text">I value the storyline when I take photographs. My photography is completed when a story is born from the thoughts and ideas of the viewers who saw my photography. I'm into shoot snap photography using an instant film camera now.</p>
                     </div>
                     <div class="contents__passion">
-                        <i class="fas fa-camera"></i>
+                        <i class="passion_logo_bg fas fa-suitcase"></i>
                         <p class="passion__title">Travel</p>
-                        <p clsss="passion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur et perferendis perspiciatis totam optio dolor nesciunt non, quia sit quasi voluptates fugit exercitationem dolorem eligendi voluptatem itaque libero magni?</p>
+                        <p clsss="passion__text">Travel to another country is always getting a new idea and feel like reborn. Every time I meet and talk with travelers and local people, I put new realizations and can get new information which I didn't know so I will continue to travel to meet strangers.</p>
                     </div>
                     <div class="contents__passion">
-                        <i class="fas fa-camera"></i>
-                        <p class="passion__title">Photography</p>
-                        <p class="passion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur et perferendis perspiciatis totam optio dolor nesciunt non, quia sit quasi voluptates fugit exercitationem dolorem eligendi voluptatem itaque libero magni?</p>
+                        <i class="passion_logo_bg fas fa-film"></i>
+                        <p class="passion__title">Movie</p>
+                        <p class="passion__text">The way to keep my motivation is by watching movies. Immerse me in the story and reset my mind. I like to make movies as well, and my major was filmmaking when I was a student, I created an hour-long feature film.</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="about__contents">
+                <div class="about__title__wrap">
+                    <div class="about__num__title">
+                        <p class="about__contens__num">03</p>
+                        <p class="about__contens__title">AMBITION</p>
+                    </div>
+                </div>              
+                <div class="contents__passion__wrap">
+                    <div class="contents__passion">
+                        <i class="passion_logo_bg fas fa-paint-brush"></i>
+                        <p class="passion__title">Design</p>
+                        <p class="passion__text">I did the visual design in Japan such as campaign banners and flyer designs. I used Photoshop and illustrator at the time. Currently I am designing while learning Figma and sketch.</p>
+                    </div>
+                    <div class="contents__passion">
+                        <i class="fas fa-laptop-code" id="front_end"></i>
+                        <p class="passion__title">Front - End</p>
+                        <p clsss="passion__text">I'm learning HTML and CSS knowledge as well as a programming language such as javascript and react. Making use of what I learned, I develop apps and games.</p>
+                    </div>
+                    <div class="contents__passion">
+                        <i class="fas fa-mobile-alt" id="mobile"></i>
+                        <p class="passion__title">Mobile</p>
+                        <p class="passion__text">I am practicing Android app development and mobile design. A project is in progress to shape the idea.</p>
                     </div>
                 </div>  
             </div>
@@ -98,21 +97,20 @@
                         <p class="about__contens__num">04</p>
                         <p class="about__contens__title">SKILLS</p>
                     </div>
-                    <p class="about__contents__category">ABOUT</p>
                 </div>
                 <div class="contents__skills__wrap">
                     <div class="contents__skills">
                         <img src="imgs/logo_html.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
-                                <p>HTML & CSS</p>
+                                <p>HTML5 & CSS3</p>
                                 <p>80%</p>
                             </div>
                             <div class="skills__wrap"><div class="skills__percentage__html"></div></div> 
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_js.svg">
+                        <img src="imgs/logo_js4.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>JavaScript</p>
@@ -124,7 +122,7 @@
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_react.svg">
+                        <img src="imgs/logo_react2.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>React</p>
@@ -134,7 +132,7 @@
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_sketch.svg">
+                        <img src="imgs/logo_sketch2.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>Sketch</p>
@@ -144,7 +142,7 @@
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_sass.svg">
+                        <img src="imgs/logo_sass2.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>Sass</p>
@@ -154,7 +152,7 @@
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_ps.svg">
+                        <img src="imgs/logo_ps2.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>Photoshop</p>
@@ -164,10 +162,10 @@
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_ai.svg">
+                        <img src="imgs/logo_ai2.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
-                                <p>Illurator</p>
+                                <p>Illustrator</p>
                                 <p>70%</p>
                             </div>
                             <div class="skills__wrap"><div class="skills__percentage__ai"></div></div>
@@ -184,7 +182,7 @@
                         </div>
                     </div>
                     <div class="contents__skills">
-                        <img src="imgs/logo_ae.svg">
+                        <img src="imgs/logo_ae2.svg">
                         <div class="skills__titles">
                             <div class="skills__skilleach">
                                 <p>Affter Effect</p>
@@ -198,25 +196,34 @@
             <div class="about__contents">
                 <div class="about__title__wrap">
                     <div class="about__num__title">
-                        <p class="about__contens__num">04</p>
+                        <p class="about__contens__num">05</p>
                         <p class="about__contens__title">CONTACT</p>
                     </div>
-                    <p class="about__contents__category">ABOUT</p>
                 </div>
                 <div class="about__contents__contact">
                     <p>MAI GOHARA</p>
                     <div class="contact__info">
                         <ul>
                             <li><a href="mailto:maigohara-1103@outlook.jp" target="_blank"><i class="fas fa-envelope"></i><p>maigohara-1103@outlook.jp</p></a></li>
-                            <li><a href="tel: 1-604-690-0583" target="_blank"><i class="fas fa-phone-square"></i><p>+1  604 690 0583</p></a></li>
+                            <li><a href="tel: 1-604-690-0583" target="_blank"><i class="fas fa-phone-square"></i><p>+1 (604) 690-0583</p></a></li>
                             <li><a href="https://github.com/mai5hara" target="_blank"><i class="fab fa-github"></i><p>mai5hara</p></a></li>
+                            <li><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i><p>Mai Gohara</p></a></li>
                             <li><a href="https://www.instagram.com/mai5hara_photography/" target="_blank"><i class="fab fa-instagram"></i><p>mai5hara_photography</p></a></li>
+                            <li><a href="imgs/maigohara_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i><p>Resume Download</p></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="project__back__btn__wrap">
+            <a href="index.html">
+                <div class="project__back__btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
     </main>
-    <script src="script/main.js"></script>
+    <script src="script/scrollMagic.js"></script>
 </body>
 </html>
