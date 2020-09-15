@@ -1223,6 +1223,13 @@ body {
   background-color: #FFF3E6;
 }
 
+#work__details #topimage__movie {
+  background-image: url("../../imgs/movie.png");
+  background-position: top 15% right 50%;
+  background-size: 12%;
+  background-color: #23589E;
+}
+
 #work__details #topimage__woksinjapan {
   background-image: url("../../imgs/worksinjapan_bg.jpg");
   background-position: top 48% right 80%;
@@ -1461,6 +1468,18 @@ body {
 
 #work__details .project__design__color .design__category__wrap .design__color__details #palet2_weather {
   background-color: #636363;
+}
+
+#work__details .project__design__color .design__category__wrap .design__color__details #palet1_movie {
+  background-color: #23589E;
+}
+
+#work__details .project__design__color .design__category__wrap .design__color__details #palet2_movie {
+  background-color: #C71585;
+}
+
+#work__details .project__design__color .design__category__wrap .design__color__details #palet3_movie {
+  background-color: #222222;
 }
 
 #work__details .project__design__color .design__category__wrap .design__color__details p {

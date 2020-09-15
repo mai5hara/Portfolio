@@ -39,6 +39,13 @@
             background-color: #FFF3E6;
         }
 
+        #topimage__movie {
+            background-image: url('../../imgs/movie.png');
+            background-position: top 15% right 50%;
+            background-size: 12%;
+            background-color: #23589E;
+        }
+
         #topimage__woksinjapan {
             background-image: url('../../imgs/worksinjapan_bg.jpg');
             background-position: top 48% right 80%;
@@ -274,6 +281,18 @@
 
                         #palet2_weather {
                             background-color: #636363;
+                        }
+
+                        #palet1_movie {
+                            background-color: #23589E;
+                        }
+
+                        #palet2_movie {
+                            background-color: #C71585;
+                        }
+
+                        #palet3_movie {
+                            background-color: #222222;
                         }
 
                         p {
