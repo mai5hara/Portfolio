@@ -1765,4 +1765,319 @@ body {
     height: 6.0rem;
   }
 }
+
+.work-contents {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.work-contents-otm {
+  background-image: url("../../imgs/mountain.jpg");
+  background-size: cover;
+}
+
+.work-contents-bm {
+  background-color: #EA4E36;
+  background-image: url("../../imgs/brushmap_logo_whitever.png");
+  background-position: top 51% right 22%;
+  background-size: 10%;
+}
+
+.work-contents-egg {
+  background-position: top 51% right 22%;
+  background-size: 10%;
+  background-color: #ffb356;
+  background-image: url("../../imgs/super_soft_boiled_egg.svg");
+}
+
+.work-contents-weather {
+  background-position: top 51% right 22%;
+  background-size: 10%;
+  background-color: #fdf3e7;
+  background-image: url("../../imgs/sunny.svg");
+}
+
+.work-contents-movie {
+  background-color: #24589E;
+  background-image: url("../../imgs/movie.png");
+  background-position: top 51% right 22%;
+  background-size: 10%;
+}
+
+.work-contents-japan {
+  background-position: top 10% right 15%;
+  background-image: url("../../imgs/worksinjapan_bg2.jpg");
+  background-size: cover;
+}
+
+.work-contents-showcase {
+  background-color: #5695c8;
+  background-image: url("../../imgs/skillsshowcase_bglogo.png");
+  background-position: top 51% right 22%;
+  background-size: 20%;
+}
+
+.work-contents__left {
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(108, 108, 108, 0.8);
+  padding: 5.0rem;
+}
+
+.work-contents__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-bottom: 0.5rem;
+}
+
+.work-contents__num {
+  font-size: 5.2rem;
+}
+
+.work-contents__category {
+  font-size: 1.3rem;
+}
+
+.work-contents__border {
+  background-color: #fff;
+  height: 1px;
+  opacity: 1;
+}
+
+.work-contents__product-wrap {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 20vh 0;
+  -webkit-animation-name: example;
+          animation-name: example;
+}
+
+.work-contents__product-service {
+  font-size: 2.4rem;
+}
+
+.work-contents__product-title {
+  font-size: 5.0rem;
+  margin: 1.0rem 0;
+}
+
+.work-contents__product-purpse {
+  font-size: 2.0rem;
+}
+
+.work-contents__product-link {
+  text-decoration: none;
+}
+
+.work-contents__viewdetails {
+  margin-top: 3.0rem;
+  width: 30%;
+  color: #777;
+  border-radius: 50px;
+  background-color: #fff;
+  height: 4.2rem;
+  text-align: center;
+}
+
+.work-contents__viewdetails-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 4.3rem;
+}
+
+.work-contents__viewdetails:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+@media screen and (max-width: 1179px) {
+  .work-contents-bm {
+    background-position: top 50% right 16%;
+    background-size: 25%;
+  }
+  .work-contents-egg {
+    background-position: top 50% right 16%;
+    background-size: 25%;
+  }
+  .work-contents-weather {
+    background-position: top 50% right 16%;
+    background-size: 25%;
+  }
+  .work-contents-showcase {
+    background-position: top 50% right 16%;
+    background-size: 25%;
+  }
+  .work-contents__product-wrap {
+    margin: 10vh 0;
+  }
+  .work-contents__product-service {
+    font-size: 2.2rem;
+  }
+  .work-contents__product-title {
+    font-size: 4.2rem;
+  }
+  .work-contents__product-purpse {
+    font-size: 1.8rem;
+  }
+  .work-contents__viewdetails {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .work-contents-bm {
+    background-position: top 51% right 35%;
+    background-size: 60%;
+  }
+  .work-contents-egg {
+    background-position: top 51% right 35%;
+    background-size: 70%;
+  }
+  .work-contents-weather {
+    background-position: top 51% right 35%;
+    background-size: 70%;
+  }
+  .work-contents-showcase {
+    background-position: top 51% right 22%;
+    background-size: 60%;
+  }
+  .work-contents__left {
+    width: 75%;
+    padding: 8.0rem 1.5rem;
+  }
+  .work-contents__num {
+    font-size: 3.0rem;
+  }
+  .work-contents__category {
+    font-size: 1.3rem;
+  }
+  .work-contents__product-service {
+    font-size: 1.6rem;
+  }
+  .work-contents__product-title {
+    font-size: 2.7rem;
+  }
+  .work-contents__product-purpse {
+    font-size: 1.3rem;
+  }
+}
+
+.work-pagenation {
+  position: fixed;
+  top: 50%;
+  right: 32px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.work-pagenation__link {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 1.3rem 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.work-pagenation .active {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .work-pagenation {
+    right: 2rem;
+  }
+  .work-pagenation__link {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.home-inner {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-inner__head-wrap {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  color: #222222;
+  background: url(../../imgs/background_image.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 0%;
+  background-color: #fff;
+  scroll-snap-align: start;
+}
+
+.home-inner__head {
+  width: 100%;
+  height: 100%;
+  margin: 32vh 0 32vh 6.0rem;
+}
+
+.home-inner__greeting-cursor {
+  border-right: 0.2rem solid #777;
+}
+
+.home-inner__greeting, .home-inner__name {
+  font-size: 7.5rem;
+}
+
+.home-inner__jobtitle {
+  font-size: 3.2rem;
+}
+
+@media screen and (max-width: 1179px) {
+  .home-inner__head {
+    margin: 32vh 0 32vh 3rem;
+  }
+  .home-inner__greeting, .home-inner__name {
+    font-size: 5.0rem;
+  }
+  .home-inner__jobtitle {
+    font-size: 3.0rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-inner__head-wrap {
+    background-size: cover;
+  }
+  .home-inner__head {
+    margin: 32vh 0 32vh 3rem;
+  }
+  .home-inner__greeting, .home-inner__name {
+    font-size: 4rem;
+  }
+  .home-inner__jobtitle {
+    font-size: 2.7rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

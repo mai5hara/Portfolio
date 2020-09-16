@@ -1,5 +1,5 @@
 /*=============================
-    index.html hometitle
+    index.html home greeting
 =============================*/
 
 class TypeWriter {
@@ -17,25 +17,23 @@ class TypeWriter {
         const current = this.wordIndex % this.words.length;
         const fullTxt = this.words[current];
 
-        // console.log(fullTxt)
-
-        if(this.isDeleting) {
+        if (this.isDeleting) {
             this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.txtElement.innerHTML = `<span class="home__title__add">${this.txt}</span>`;
+        this.txtElement.innerHTML = `<span class="home-inner__greeting-cursor">${this.txt}</span>`;
 
         let typeSpeed = 300;
-        if(this.isDeleting) {
+        if (this.isDeleting) {
             typeSpeed /= 2;
         }
 
-        if(!this.isDeleting && this.txt === fullTxt) {
+        if (!this.isDeleting && this.txt === fullTxt) {
             typeSpeed = this.wait;
             this.isDeleting = true;
-        } else if(this.isDeleting && this.txt === '') {
+        } else if (this.isDeleting && this.txt === '') {
             this.isDeleting = false;
             this.wordIndex++;
             typeSpeed = 500;
@@ -48,7 +46,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    const txtElement = document.querySelector('.home__title');
+    const txtElement = document.querySelector('.home-inner__greeting');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
 
@@ -59,23 +57,21 @@ function init() {
     Smooth scroll
 =============================*/
 
-const workPagenation = document.querySelectorAll(".work__pagenation a");
+const workPagenation = document.querySelectorAll(".work-pagenation a");
 
 workPagenation.forEach(pagenation => {
     pagenation.addEventListener("click", e => {
         e.preventDefault();
         const targetId = e.target.hash;
-        // console.log(targetId);
 
         const target = document.querySelector(targetId);
-        // console.log(target);
 
-        target.scrollIntoView({ behavior: "smooth"});
+        target.scrollIntoView({ behavior: "smooth" });
     });
 });
 
-const sections = document.querySelectorAll(".work__section");	
-const observerRoot = document.querySelector(".home__inner");
+const sections = document.querySelectorAll(".work-section");
+const observerRoot = document.querySelector(".home-inner");
 const options = {
     root: observerRoot,
     rootMargin: "-50% 0px",
@@ -88,11 +84,11 @@ sections.forEach(section => {
 });
 
 function doWhenIntersect(entriesList) {
-    const entries = Array.prototype.slice.call(entriesList, 0);	
+    const entries = Array.prototype.slice.call(entriesList, 0);
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-        activatePagenation(entry.target);
-        // activeCategoryAni mation(entry.target);
+            activatePagenation(entry.target);
+            // activeCategoryAni mation(entry.target);
         }
     });
 }
