@@ -1,7 +1,7 @@
-const menuHamb = document.querySelector('.nav__menu__hamb');
-    const menuNab = document.querySelector('.nav__nemu__container');
+const menuHamb = document.querySelector('.navbar-side__hamburger');
+const menuNab = document.querySelector('.navbar-menu');
 
-    menuHamb.addEventListener('click', () => {
-        menuHamb.classList.toggle('nav__action');
-        menuNab.classList.toggle('nav__open');
-    });
+menuHamb.addEventListener('click', () => {
+    menuHamb.classList.toggle('navbar-side__action');
+    menuNab.classList.toggle('navbar-open');
+});

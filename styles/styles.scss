@@ -2,7 +2,6 @@
 @import './base/base';
 // @import './component/worksinjapan';
 @import './component/navbar';
-@import './component/about';
 @import './component/work';
 @import './component/workdetails';
 @import './component/index/work-contents';
@@ -14,3 +13,5 @@
 @import './component/about/about-whoiam';
 @import './component/about/about-skill';
 @import './component/about/about-contact';
+@import './component/header/navbar-side';
+@import './component/header/navbar-menu';
