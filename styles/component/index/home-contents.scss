@@ -125,7 +125,7 @@
 
 @include mq('tab') {
   .home-contents {
-    &-bm, &-egg, &-weather, &-showcase {
+    &-bm, &-egg, &-weather, &-showcase, &-movie {
       background-position: top 50% right 16%;
       background-size: 25%;
     }

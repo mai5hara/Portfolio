@@ -82,6 +82,7 @@
 
 @include mq('tab') {
   .work-details {
+    margin-top: 7rem;
     &__demo-btn-wrap {
       padding: 0 6.0rem;
       a {

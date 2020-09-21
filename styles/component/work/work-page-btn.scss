@@ -28,3 +28,9 @@
     color: darken($light-green, 10%);
   }
 }
+
+@include mq('sp') {
+  .work-page-btn {
+    display: none;
+  }
+}

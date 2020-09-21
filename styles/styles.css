@@ -159,7 +159,7 @@ body {
 }
 
 @media screen and (max-width: 1179px) {
-  .home-contents-bm, .home-contents-egg, .home-contents-weather, .home-contents-showcase {
+  .home-contents-bm, .home-contents-egg, .home-contents-weather, .home-contents-showcase, .home-contents-movie {
     background-position: top 50% right 16%;
     background-size: 25%;
   }
@@ -907,6 +907,9 @@ body {
 }
 
 @media screen and (max-width: 1179px) {
+  .work-details {
+    margin-top: 7rem;
+  }
   .work-details__demo-btn-wrap {
     padding: 0 6.0rem;
   }
@@ -1015,6 +1018,12 @@ body {
 
 .work-page-btn__page:hover, .work-page-btn__page--prev:hover, .work-page-btn__page--next:hover {
   color: #28bca1;
+}
+
+@media screen and (max-width: 767px) {
+  .work-page-btn {
+    display: none;
+  }
 }
 
 .work-design-color {
