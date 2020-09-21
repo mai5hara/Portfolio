@@ -1,0 +1,30 @@
+.work-page-btn {
+  transform: rotate(90deg);
+  width: 15.0rem;
+  position: sticky;
+  bottom: 9vh;
+  &__page {
+    $this: &;
+    font-size: 1.3rem;
+    color: $off-white;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    &--prev {
+      @extend #{$this};
+      margin-right: 1.0rem;
+      .fas {
+        transform: rotate(-90deg);
+      }
+    }
+    &--next {
+      @extend #{$this};
+      .fas {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__page:hover {
+    color: darken($light-green, 10%);
+  }
+}

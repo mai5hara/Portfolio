@@ -1,0 +1,33 @@
+.work-design-logo {
+  margin-top: 6rem;
+  &__title {
+    color: $off-white;
+  }
+  &__wrap {
+    display: flex;
+    width: 100%;
+    margin: 8.0rem auto;
+    justify-content: center;
+    img {
+      width: 30%;
+    }
+  }
+  &__img-left {
+    margin-right: 9.0rem;
+  }
+}
+
+@include mq('sp') {
+  .work-design-logo {
+    &__wrap {
+      display: block;
+      width: 100%;
+      margin: 5.0rem auto;
+      img {
+        width: 70%;
+        margin: 0 auto 3.0rem auto;
+        display: block;
+      }
+    }
+  }
+}

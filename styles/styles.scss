@@ -4,8 +4,8 @@
 @import './component/navbar';
 @import './component/work';
 @import './component/workdetails';
-@import './component/index/work-contents';
-@import './component/index/work-pagenation';
+@import './component/index/home-contents';
+@import './component/index/home-pagenation';
 @import './component/index/home-inner';
 @import './component/about/about';
 @import './component/about/about-contents';
@@ -15,3 +15,10 @@
 @import './component/about/about-contact';
 @import './component/header/navbar-side';
 @import './component/header/navbar-menu';
+@import './component/work/work-details';
+@import './component/work/work-back-btn';
+@import './component/work/work-page-btn';
+@import './component/work/work-design-color';
+@import './component/work/work-design-typo';
+@import './component/work/work-design-img';
+@import './component/work/work-design-logo';

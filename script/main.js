@@ -57,7 +57,7 @@ function init() {
     Smooth scroll
 =============================*/
 
-const workPagenation = document.querySelectorAll(".work-pagenation a");
+const workPagenation = document.querySelectorAll(".home-pagenation a");
 
 workPagenation.forEach(pagenation => {
     pagenation.addEventListener("click", e => {
@@ -70,7 +70,7 @@ workPagenation.forEach(pagenation => {
     });
 });
 
-const sections = document.querySelectorAll(".work-section");
+const sections = document.querySelectorAll(".home-section");
 const observerRoot = document.querySelector(".home-inner");
 const options = {
     root: observerRoot,

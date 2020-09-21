@@ -1,0 +1,114 @@
+.work-details {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  &__contents {
+    width: 60%;
+    margin: 0 auto 5.0rem auto;
+  }
+  &__title {
+    margin: 4.0rem 0 5.5rem 0;
+    text-align: center;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #222222;
+    font-size: 3.0rem;
+  }
+  &__app-name {
+    margin: 7.0rem 0 2.0rem 0;
+  }
+  &__description {
+    display: flex;
+    margin: 0 0 1.5rem 0;
+  }
+  &__description-right, &__description-left {
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 1.8rem;
+
+      span {
+          font-size: 1.3rem;
+          display: block;
+          margin-bottom: 0.5rem;
+          color: $light-gray;
+      }
+    }
+  }
+  &__description-right {
+    width: 60%;
+    word-break: break-word;
+  }
+  &__description-left {
+    width: 30%;
+    margin-right: 10%;
+  }
+  &__demo {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+  &__demo-btn-wrap {
+    padding: 0 15.0rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      width:35%;
+    }
+  }
+  &__demo-btn, &__github-btn {
+    background-color: $light-green;
+    border-radius: 50px;
+    height: 4.2rem;
+    margin: 5.5rem auto 5.5rem auto;
+    text-align: center;
+    p {
+      align-items: center;
+      color: #fff;
+      font-size: 2.0rem;
+      line-height: 4.2rem;
+      vertical-align: middle;
+    }
+  }
+  &__demo-btn:hover, &__github-btn:hover {
+    background-color: darken($light-green,10%);
+  }
+
+}
+
+@include mq('tab') {
+  .work-details {
+    &__demo-btn-wrap {
+      padding: 0 6.0rem;
+      a {
+        width: 45%;
+      }
+    }
+    &__demo-btn, &__github-btn {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@include mq('sp') {
+  .work-details {
+    &__contents {
+      width: 90%;
+    }
+    &__description {
+      display: block;
+    }
+    &__description-right, &__description-left {
+      width: 100%;
+    }
+    &__demo-btn-wrap {
+      padding: 0;
+    }
+  }
+}

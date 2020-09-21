@@ -1,0 +1,43 @@
+
+.work-back-btn {
+  position: relative;
+  bottom: 8%;
+  right: 4%;
+  position: fixed;
+  &__wrap {
+    background-color: $light-green;
+    width: 7.0rem;
+    height: 7.0rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 5;
+    >span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 8px;
+      margin: -6px 0 0;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+    >span:last-child {
+      margin: -1px 0 0;
+      transform: rotate(-45deg);
+    }
+  }
+  &__wrap:hover {
+    background-color: darken($light-green, 10%);
+  }
+}
+
+@include mq('sp') {
+  .work-back-btn {
+    bottom: 4%;
+    right: 5%;
+    &__wrap {
+      width: 6.0rem;
+      height: 6.0rem;
+    }
+  }
+}

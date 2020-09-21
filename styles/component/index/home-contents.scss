@@ -1,4 +1,4 @@
-.work-contents {
+.home-contents {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -124,7 +124,7 @@
 }
 
 @include mq('tab') {
-  .work-contents {
+  .home-contents {
     &-bm {
       background-position: top 50% right 16%;
       background-size: 25%;
