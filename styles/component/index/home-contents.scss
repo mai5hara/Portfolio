@@ -125,22 +125,7 @@
 
 @include mq('tab') {
   .home-contents {
-    &-bm {
-      background-position: top 50% right 16%;
-      background-size: 25%;
-    }
-
-    &-egg {
-      background-position: top 50% right 16%;
-      background-size: 25%;
-    }
-
-    &-weather {
-      background-position: top 50% right 16%;
-      background-size: 25%;
-    }
-
-    &-showcase {
+    &-bm, &-egg, &-weather, &-showcase {
       background-position: top 50% right 16%;
       background-size: 25%;
     }
@@ -168,18 +153,13 @@
 }
 
 @include mq('sp') {
-  .work-contents {
+  .home-contents {
     &-bm {
       background-position: top 51% right 35%;
       background-size: 60%;
     }
 
-    &-egg {
-      background-position: top 51% right 35%;
-      background-size: 70%;
-    }
-
-    &-weather {
+    &-egg, &-weather {
       background-position: top 51% right 35%;
       background-size: 70%;
     }

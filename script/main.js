@@ -101,27 +101,3 @@ function activatePagenation(element) {
     const newActiveIndex = document.querySelector(`a[href='#${element.id}']`);
     newActiveIndex.classList.add("active");
 }
-
-// function activeCategoryAnimation(element2) {
-//     const categoryActiveAnimation = document.querySelector(`#${element2.id} .work__contents__left .work__contents__title .work__contents_num`);
-//     console.log(categoryActiveAnimation);
-
-//     categoryActiveAnimationChange = () => {
-
-//     }
-
-//     if (categoryActiveAnimation.classList.contains("work__category__animation") === false) {
-//         // console.log('This is null');
-//         categoryActiveAnimation.classList.add("work__category__animation");
-//     } else {
-//         categoryActiveAnimation.classList.remove("work__category__animation");
-
-//     }
-//     // const newCategoryActiveAnimation = document.querySelector(`#${element2.id} .work__contents__left .work__contents__title .work__contents_num`);
-//     // console.log(test);
-//     // console.log(newCategoryActiveAnimation);
-//     // newCategoryActiveAnimation.classList.add("work__category__animation");
-
-
-// }
-
