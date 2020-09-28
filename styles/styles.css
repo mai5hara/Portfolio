@@ -907,9 +907,6 @@ body {
 }
 
 @media screen and (max-width: 1179px) {
-  .work-details {
-    margin-top: 7rem;
-  }
   .work-details__demo-btn-wrap {
     padding: 0 6.0rem;
   }
@@ -922,6 +919,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .work-details {
+    margin-top: 7rem;
+  }
   .work-details__contents {
     width: 90%;
   }
