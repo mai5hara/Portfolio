@@ -21,7 +21,6 @@ $breakpoints: (
     "pc": "screen and (min-width: #{$layout-width-inner})",
 );
 //mediaquery
-// メディアクエリー
 @mixin mq($breakpoint: sp) {
     @media #{map-get($breakpoints, $breakpoint)} {
         @content;

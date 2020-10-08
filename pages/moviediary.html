@@ -14,120 +14,108 @@
             $(".header").load("header.html");
         });
     </script>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/portfolio-design.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <title>Movie Diary</title>
 </head>
 
 <body>
     <header class="header"></header>
-    <main class="work-details">
-        <div class="work-details__contents">
-            <h2 class="work-details__title">Movie Diary</h2>
-            <div class="work-details__description">
-                <div class="work-details__description-left">
+    <main class="portfolio-details">
+        <div class="portfolio-details__contents">
+            <h2 class="project-name">Movie Diary</h2>
+            <div class="project-description">
+                <div class="project-description__text-left">
                     <p><span>PROJECT</span>UI/UX Design, Developent</p>
                     <p><span>USE TECHNOLOGY</span>React / Redux / Hooks / Emotion / firebase / formik / axios</p>
                 </div>
-                <div class="work-details__description-right">
+                <div class="project-description__text-right">
                     <p><span>CONCEPT</span>This is a diary application for making a note about the thoughts of your
                         favorite movie. I am a crazy movie fan but if I don't take a note I'll for get what I watched
                         and what I thought about the movie so I decided to make this app whchi can use like diary.
                     </p>
                 </div>
             </div>
-            <div class="work-details__demo">
-                <div class="work-details__demo-btn-wrap">
+            <div class="demo-button">
+                <div class="demo-button__wrap">
                     <a href="https://heuristic-colden-0b1a1a.netlify.app/" target="_blank">
-                        <div class="work-details__demo-btn">
+                        <div class="demo-button__demo-btn">
                             <p>In The Making</p>
                         </div>
                     </a>
                     <a href="https://github.com/mai5hara/Movie_app" target="_blank">
-                        <div class="work-details__github-btn">
+                        <div class="demo-button__github-btn">
                             <p>Github</p>
                         </div>
                     </a>
                 </div>
             </div>
             <h2>Identity Design</h2>
-            <div class="work-design">
-                <div class="work-design-color">
-                    <p class="work-design-color__title">COLOR</p>
-                    <div class="work-design-color__wrap">
-                        <div class="work-design-color__details">
-                            <div class="work-design-color__palet" id="palet1_movie"></div>
-                            <p>Main Color</p>
-                            <p>#23589E</p>
-                        </div>
-                        <div class="work-design-color__details">
-                            <div class="work-design-color__palet" id="palet2_movie"></div>
-                            <p>Sub Color</p>
-                            <p>#C71585</p>
-                        </div>
-                        <div class="work-design-color__details">
-                            <div class="work-design-color__palet" id="palet3_movie"></div>
-                            <p>Font Color</p>
-                            <p>#222222</p>
-                        </div>
+            <div class="identity-design">
+                <p class="identity-design-subtitle">COLOR</p>
+                <div class="identity-design-wrap">
+                    <div class="color-palet">
+                        <div class="color-palet__palet" id="palet1_movie"></div>
+                        <p>Main Color</p>
+                        <p>#23589E</p>
+                    </div>
+                    <div class="color-palet">
+                        <div class="color-palet__palet" id="palet2_movie"></div>
+                        <p>Sub Color</p>
+                        <p>#C71585</p>
+                    </div>
+                    <div class="color-palet">
+                        <div class="color-palet__palet" id="palet3_movie"></div>
+                        <p>Font Color</p>
+                        <p>#222222</p>
                     </div>
                 </div>
-                <div class="work-design-typo">
-                    <p class="work-design-typo__title">TYPOGRAPHY</p>
-                    <div class="work-design-typo__wrap">
-                        <div class="work-design-typo__details">
-                            <p class="work-design-typo__ex" id="font_gillsans">Aa Bb Cc</p>
-                            <p class="work-design-typo__font-name">Gill Sans Regular</p>
+                <div class="identity-design">
+                    <p class="identity-design-subtitle">TYPOGRAPHY</p>
+                    <div class="identity-design-wrap">
+                        <div class="typo-details">
+                            <p class="typo-details__ex" id="font_gillsans">Aa Bb Cc</p>
+                            <p class="typo-details__font-name">Gill Sans Regular</p>
                         </div>
                     </div>
                 </div>
                 <h2>Web App Image</h2>
-                <div class="work-design-img">
-                    <div class="work-design-img__wrap">
-                        <p class="work-design-img__page">TOP PAGE</p>
-                        <img class="work-design-img__wrap-img" src="../imgs/movie_toppage.jpg">
+                <div class="identity-design">
+                    <div class="visual-img">
+                        <p class="identity-design-subtitle">TOP PAGE</p>
+                        <img class="visual-img__img" src="../imgs/movie_toppage.jpg">
                     </div>
-                    <div class="work-design-img__wrap">
-                        <div class="work-design-img__wrap">
-                            <p class="work-design-img__page">DETAIL PAGE</p>
-                            <img class="work-design-img__wrap-img" src="../imgs/movie_detail.jpg">
-                        </div>
+                    <div class="visual-img">
+                        <p class="identity-design-subtitle">DETAIL PAGE</p>
+                        <img class="visual-img__img" src="../imgs/movie_detail.jpg">
                     </div>
-                    <div class="work-design-img__wrap">
-                        <div class="work-design-img__wrap">
-                            <p class="work-design-img__page">REVIEW PAGE</p>
-                            <img class="work-design-img__wrap-img" src="../imgs/movie_review.jpg">
-                        </div>
+                    <div class="visual-img">
+                        <p class="identity-design-subtitle">REVIEW PAGE</p>
+                        <img class="visual-img__img" src="../imgs/movie_review.jpg">
                     </div>
-                    <div class="work-design-img__wrap">
-                        <div class="work-design-img__wrap">
-                            <p class="work-design-img__page">COMMENT PAGE</p>
-                            <img class="work-design-img__wrap-img" src="../imgs/movie_comment.jpg">
-                        </div>
+                    <div class="visual-img">
+                        <p class="identity-design-subtitle">COMMENT PAGE</p>
+                        <img class="visual-img__img" src="../imgs/movie_comment.jpg">
                     </div>
-                    <div class="work-design-img__wrap">
-                        <div class="work-design-img__wrap">
-                            <p class="work-design-img__page">TIMELINE PAGE</p>
-                            <img class="work-design-img__wrap-img" src="../imgs/movie_timeline.jpg">
-                        </div>
+                    <div class="visual-img">
+                        <p class="identity-design-subtitle">TIMELINE PAGE</p>
+                        <img class="visual-img__img" src="../imgs/movie_timeline.jpg">
                     </div>
-                    <div class="work-design-img__wrap">
-                        <div class="work-design-img__wrap">
-                            <p class="work-design-img__page">MYPAGE</p>
-                            <img class="work-design-img__wrap-img" src="../imgs/movie_mypage.jpg">
-                        </div>
+                    <div class="visual-img">
+                        <p class="identity-design-subtitle">MYPAGE</p>
+                        <img class="visual-img__img" src="../imgs/movie_mypage.jpg">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="work-page-btn">
-            <a class="work-page-btn__page--prev" id="prev" href="weathermap.html"><i class="fas fa-arrow-up"></i>
+        <div class="next-prev-button">
+            <a class="next-prev-button__page--prev" id="prev" href="weathermap.html"><i class="fas fa-arrow-up"></i>
                 PREV</a>
-            <a class="work-page-btn__page--next" id="next" href="prevwork.html">NEXT <i class="fas fa-arrow-up"></i></a>
         </div>
-        <div class="work-back-btn">
-            <a href="index.html#section5">
-                <div class="work-back-btn__wrap">
+        <div class="back-btn">
+            <a href="portfolio-development.html#section3">
+                <div class="back-btn__wrap">
                     <span></span>
                     <span></span>
                 </div>

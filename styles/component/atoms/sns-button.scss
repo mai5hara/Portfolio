@@ -1,0 +1,35 @@
+.sns-icon {
+  &__wrap {
+    text-align: center;
+    
+  }
+  %__icon {
+    font-size: 2.5rem;
+    margin: 3.0rem 0.5rem 0 0.5rem;
+    cursor: pointer;
+  }
+  &__icon {
+    @extend %__icon;
+    &--home {
+      @extend %__icon;
+      color: $light-green;
+    }
+    &--home:hover{
+      color: darken($light-green, 20%);
+    }
+    &--header {
+      @extend %__icon;
+      color: #fff;
+    }
+    &--header:hover{
+      color: darken($light-green, 20%);
+    }
+  }
+}
+
+// @include mq('sp') {
+//   .navbar-menu {
+//     height: auto;
+//     width: 100%;
+//   }
+// }

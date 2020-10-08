@@ -1,0 +1,52 @@
+.demo-button {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  &__wrap {
+    padding: 0 15.0rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      width:35%;
+    }
+  }
+  &__demo-btn, &__github-btn {
+    background-color: $light-green;
+    border-radius: 50px;
+    height: 4.2rem;
+    margin: 5.5rem auto 5.5rem auto;
+    text-align: center;
+    p {
+      align-items: center;
+      color: #fff;
+      font-size: 2.0rem;
+      line-height: 4.2rem;
+      vertical-align: middle;
+    }
+  }
+  &__demo-btn:hover, &__github-btn:hover {
+    background-color: darken($light-green,10%);
+  }
+}
+
+@include mq('tab') {
+  .demo-button {
+    &__wrap {
+      padding: 0 6.0rem;
+      a {
+        width: 45%;
+      }
+    }
+    &__demo-btn, &__github-btn {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

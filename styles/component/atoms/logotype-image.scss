@@ -1,0 +1,18 @@
+.identity-design-wrap{
+  img {
+    width: 30%;
+  }
+  &__img-left {
+    margin-right: 9.0rem;
+  }
+}
+
+@include mq('sp') {
+  .identity-design-wrap{
+    img {
+      width: 70%;
+      margin: 0 auto 3.0rem auto;
+      display: block;
+    }
+  }
+}
