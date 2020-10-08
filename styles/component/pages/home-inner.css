@@ -2,7 +2,9 @@
   width: 100%;
   height: 100vh;
   color: #fff;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
+/*# sourceMappingURL=home-inner.css.map */

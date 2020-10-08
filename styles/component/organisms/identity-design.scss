@@ -1,3 +1,23 @@
 .identity-design {
   margin-top: 6rem;
+  &__subtitle {
+    color: $off-white;
+    margin-bottom: 1rem;
+  }
+  &__wrap {
+    display: flex;
+    width: 100%;
+    margin: 8.0rem auto;
+    justify-content: center;
+  }
+}
+
+@include mq('sp') {
+  .identity-design {
+    &__wrap {
+      display: block;
+    width: 100%;
+    margin: 5.0rem auto;
+    }
+  }
 }

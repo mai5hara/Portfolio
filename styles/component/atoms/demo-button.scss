@@ -4,48 +4,90 @@
     margin: 0 auto;
     width: 90%;
   }
-  &__wrap {
-    padding: 0 15.0rem;
+  %__wrap {
     display: flex;
     width: 100%;
-    justify-content: space-around;
     a {
       text-decoration: none;
-      color: #fff;
       display: block;
-      width:35%;
     }
   }
-  &__demo-btn, &__github-btn {
-    background-color: $light-green;
+  &__wrap {
+    @extend %__wrap;
+    &--portfolio {
+      @extend %__wrap;
+      a{
+        width:40%;
+      }
+    }
+    &--demo {
+      @extend %__wrap;
+      justify-content: space-around;
+      padding: 0 15.0rem;
+      a{
+        width:35%;
+      }
+    }
+  }
+
+  %__demo {
     border-radius: 50px;
     height: 4.2rem;
-    margin: 5.5rem auto 5.5rem auto;
     text-align: center;
     p {
       align-items: center;
-      color: #fff;
-      font-size: 2.0rem;
       line-height: 4.2rem;
       vertical-align: middle;
     }
   }
-  &__demo-btn:hover, &__github-btn:hover {
-    background-color: darken($light-green,10%);
+  &__demo{
+    &--portfolio {
+      @extend %__demo;
+      background-color: #fff;
+      margin: 5.5rem auto;
+      p{
+        color: #777;
+        font-size: 1.5rem;
+      }
+    }
+    &--portfolio:hover {
+      background-color: #dfdfdf;
+    }
+    &--demo, &--github {
+      @extend %__demo;
+      background-color: $light-green;
+      margin: 5.5rem auto 5.5rem auto;
+      p {
+        color: #fff;
+        font-size: 1.8rem;
+      }
+    }
+    &--demo:hover, &--github:hover {
+      background-color: darken($light-green,10%);
+    }
   }
 }
 
 @include mq('tab') {
   .demo-button {
     &__wrap {
-      padding: 0 6.0rem;
-      a {
-        width: 45%;
+      &--demo {
+      padding: 0;
+        a {
+          width: 45%;
+        }
+      }
+      &--portfolio{
+        a {
+          width: 60%;
+        }
       }
     }
-    &__demo-btn, &__github-btn {
-      p {
-        font-size: 1.6rem;
+    &__demo, &__github {
+      &--demo, &--github {
+        p {
+          font-size: 1.6rem;
+        }
       }
     }
   }

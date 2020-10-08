@@ -1,10 +1,5 @@
 .sns-icon {
-  &__wrap {
-    text-align: center;
-    
-  }
   %__icon {
-    font-size: 2.5rem;
     margin: 3.0rem 0.5rem 0 0.5rem;
     cursor: pointer;
   }
@@ -12,16 +7,25 @@
     @extend %__icon;
     &--home {
       @extend %__icon;
-      color: $light-green;
+      a {
+        font-size: 3rem;
+        color: $light-green;
+        margin-right: 1.5rem;
+      }
     }
-    &--home:hover{
+    &--home a:hover{
       color: darken($light-green, 20%);
     }
     &--header {
       @extend %__icon;
-      color: #fff;
+      text-align: center;
+      a {
+        font-size: 2.5rem;
+        color: #fff;
+        margin: 0 0.5rem;
+      }
     }
-    &--header:hover{
+    &--header a:hover{
       color: darken($light-green, 20%);
     }
   }

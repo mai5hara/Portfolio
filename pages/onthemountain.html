@@ -14,8 +14,8 @@
             $(".header").load("header.html");
         });
     </script>
-    <link rel="stylesheet" href="../styles/portfolio-design.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/project/portfolio-design.css">
+    <link rel="stylesheet" href="../styles/header/header.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <title>On The Mountain</title>
 </head>
@@ -23,6 +23,10 @@
 <body>
     <header class="header"></header>
     <main class="portfolio-details">
+        <div class="language-change">
+            <p class="en">EN</p>
+            <p class="jp">JP</p>
+        </div>
         <div class="portfolio-details__contents">
             <h2 class="project-name">On The Mountain</h2>
             <div class="project-description">
@@ -39,17 +43,19 @@
                         not only a recipe list but also mountain information and dish sharing features.</p>
                 </div>
             </div>
-            <div class="demo-button__wrap">
-                <a href="#">
-                    <div class="demo-button__demo-btn">
-                        <p>In the maiking</p>
-                    </div>
-                </a>
+            <div class="demo-button">
+                <div class="demo-button__wrap--demo">
+                    <a href="#">
+                        <div class="demo-button__demo--demo">
+                            <p>In the maiking</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <h2>Mobile App Image</h2>
             <div class="identity-design">
                 <div class="visual-img">
-                    <p class="identity-design-subtitle">WIRE FRAME</p>
+                    <p class="identity-design__subtitle">WIRE FRAME</p>
                     <div id="visual-img__otm">
                         <img class="visual-img__otm-img" src="../imgs/menu.png">
                         <img class="visual-img__otm-img" src="../imgs/recipe menu.png">

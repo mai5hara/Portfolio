@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,UAAU,EAAE,IAAI;CACjB",
-    "sources": [
-        "identity-design.scss"
-    ],
-    "names": [],
-    "file": "identity-design.css"
-}

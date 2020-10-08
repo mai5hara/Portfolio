@@ -1,0 +1,33 @@
+.navbar-list {
+  text-align: center;
+  &__page-list {
+    list-style: none;
+  }
+  &__page-tab {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: darken($light-green, 20%);
+    }
+  }
+}
+
+@include mq('tab') {
+  .navbar-list {
+    &__page-tab {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include mq('sp') {
+  .navbar-list {
+    &__page-tab {
+      font-size: 1.8rem;
+    }
+  }
+}

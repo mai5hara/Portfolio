@@ -452,7 +452,6 @@ body {
 .page-subtitle {
   margin: 0 auto;
   font-size: 3.2rem;
-  border-bottom: 1px solid #6D7278;
   padding-bottom: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,31 +459,49 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.page-subtitle-portfolio {
+  border-bottom: 1px solid #fff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.page-subtitle__border {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.page-subtitle-about {
+  border-bottom: 1px solid #6D7278;
 }
 
-.page-subtitle__num {
-  color: #41D6BB;
-  font-size: 5.2rem;
+.page-subtitle .page-subtitle__num, .page-subtitle .page-subtitle__num--portfolio, .page-subtitle .page-subtitle__num--about {
   margin-right: 2.0rem;
 }
 
+.page-subtitle__num--portfolio {
+  font-size: 5.2rem;
+  color: #fff;
+}
+
+.page-subtitle__num--about {
+  font-size: 5.2rem;
+  color: #41D6BB;
+}
+
+.page-subtitle__title--portfolio {
+  font-size: 1.3rem;
+}
+
+.page-subtitle__title--about {
+  font-size: 3rem;
+}
+
 @media screen and (max-width: 767px) {
-  .page-subtitle__num {
-    font-size: 3.8rem;
+  .page-subtitle__num--portfolio, .page-subtitle__num--about {
+    font-size: 3.5rem;
   }
-  .page-subtitle__title {
+  .page-subtitle__title--portfolio {
+    font-size: 1rem;
+  }
+  .page-subtitle__title--about {
     font-size: 2.5rem;
   }
 }

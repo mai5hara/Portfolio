@@ -1,0 +1,68 @@
+.index-wrap {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    color: $black;
+    background: url(../../imgs/background_image.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 0%;
+    background-color: #fff;
+    scroll-snap-align: start;
+
+  &__head {
+    margin: 32vh 0 32vh 6.0rem;
+  }
+
+  &__greeting-cursor {
+    border-right: 0.2rem solid #777;
+  }
+
+  &__greeting, &__name {
+    font-size: 7.5rem;
+  }
+
+  &__jobtitle {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+  }
+}
+
+@include mq('tab') {
+  .index-wrap {
+    &__head {
+      margin: 32vh 0 32vh 3rem;
+    }
+
+    &__greeting, &__name {
+      font-size: 5.0rem;
+    }
+
+    &__jobtitle {
+      font-size: 3.0rem;
+    }
+  }
+}
+
+@include mq('sp') {
+  .index-wrap {
+    background-size: cover;
+
+    &__head {
+      margin: 32vh 0 32vh 3rem;
+    }
+
+    &__greeting, &__name {
+      font-size: 4rem;
+    }
+
+    &__jobtitle {
+      font-size: 2.7rem;
+    }
+  }
+}

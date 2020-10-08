@@ -23,7 +23,7 @@ class TypeWriter {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.txtElement.innerHTML = `<span class="home-inner__greeting-cursor">${this.txt}</span>`;
+        this.txtElement.innerHTML = `<span class="index-wrap__greeting-cursor">${this.txt}</span>`;
 
         let typeSpeed = 300;
         if (this.isDeleting) {
@@ -46,7 +46,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    const txtElement = document.querySelector('.home-inner__greeting');
+    const txtElement = document.querySelector('.index-wrap__greeting');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
 
@@ -57,7 +57,7 @@ function init() {
     Smooth scroll
 =============================*/
 
-const workPagenation = document.querySelectorAll(".home-pagenation a");
+const workPagenation = document.querySelectorAll(".pagenation a");
 
 workPagenation.forEach(pagenation => {
     pagenation.addEventListener("click", e => {
@@ -70,7 +70,7 @@ workPagenation.forEach(pagenation => {
     });
 });
 
-const sections = document.querySelectorAll(".home-section");
+const sections = document.querySelectorAll(".portfolio-section");
 const observerRoot = document.querySelector(".home-inner");
 const options = {
     root: observerRoot,

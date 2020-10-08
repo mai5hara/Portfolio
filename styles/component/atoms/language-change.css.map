@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "language-change.scss"
+    ],
+    "names": [],
+    "file": "language-change.css"
+}

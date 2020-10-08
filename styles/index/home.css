@@ -1,0 +1,126 @@
+/*==============
+    mediaquery
+==============*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  left: 8.0rem;
+  margin-right: 8.0rem;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    position: relative;
+    left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+.sns-icon .sns-icon__icon, .sns-icon .sns-icon__icon--home, .sns-icon .sns-icon__icon--header {
+  margin: 3.0rem 0.5rem 0 0.5rem;
+  cursor: pointer;
+}
+
+.sns-icon__icon--home a {
+  font-size: 3rem;
+  color: #41D6BB;
+  margin-right: 1.5rem;
+}
+
+.sns-icon__icon--home a:hover {
+  color: #1f927d;
+}
+
+.sns-icon__icon--header {
+  text-align: center;
+}
+
+.sns-icon__icon--header a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.sns-icon__icon--header a:hover {
+  color: #1f927d;
+}
+
+.home-inner {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.index-wrap {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  color: #222222;
+  background: url(../../imgs/background_image.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 0%;
+  background-color: #fff;
+  scroll-snap-align: start;
+}
+
+.index-wrap__head {
+  margin: 32vh 0 32vh 6.0rem;
+}
+
+.index-wrap__greeting-cursor {
+  border-right: 0.2rem solid #777;
+}
+
+.index-wrap__greeting, .index-wrap__name {
+  font-size: 7.5rem;
+}
+
+.index-wrap__jobtitle {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.index-wrap__description {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1179px) {
+  .index-wrap__head {
+    margin: 32vh 0 32vh 3rem;
+  }
+  .index-wrap__greeting, .index-wrap__name {
+    font-size: 5.0rem;
+  }
+  .index-wrap__jobtitle {
+    font-size: 3.0rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .index-wrap {
+    background-size: cover;
+  }
+  .index-wrap__head {
+    margin: 32vh 0 32vh 3rem;
+  }
+  .index-wrap__greeting, .index-wrap__name {
+    font-size: 4rem;
+  }
+  .index-wrap__jobtitle {
+    font-size: 2.7rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

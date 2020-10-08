@@ -1,29 +1,56 @@
 .page-subtitle {
   margin: 0 auto;
   font-size: 3.2rem;
-  border-bottom: 1px solid $off-white;
   padding-bottom: .5rem;
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  &__border {
-    display: flex;
-    align-items: baseline;
+  &-portfolio {
+    border-bottom: 1px solid #fff;
+    justify-content: space-between;
+  }
+  &-about {
+    border-bottom: 1px solid $off-white;
+  } 
+  %__num {
+    margin-right: 2.0rem;
   }
   &__num {
-    color: $light-green;
-    font-size: 5.2rem;
-    margin-right: 2.0rem;
+    @extend %__num;
+    &--portfolio {
+      @extend %__num;
+      font-size: 5.2rem;
+      color: #fff;
+    }
+    &--about {
+      @extend %__num;
+      font-size: 5.2rem;
+      color: $light-green;
+    }
+  }
+  &__title {
+    &--portfolio {
+      font-size: 1.3rem;
+    }
+    &--about {
+      font-size: 3rem;
+    }
   }
 }
 
 @include mq('sp') {
   .page-subtitle {
     &__num {
-      font-size: 3.8rem;
+      &--portfolio, &--about {
+        font-size: 3.5rem;
+      }
     }
     &__title {
-      font-size: 2.5rem;
+      &--portfolio {
+        font-size: 1rem;
+      }
+      &--about {
+        font-size: 2.5rem;
+      }
     }
   }
 }

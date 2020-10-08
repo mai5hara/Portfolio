@@ -1,9 +1,11 @@
-.identity-design-wrap{
-  img {
-    width: 30%;
-  }
-  &__img-left {
-    margin-right: 9.0rem;
+.identity-design{
+  &__wrap {
+    img {
+      width: 30%;
+    }
+    &-img-left {
+      margin-right: 9.0rem;
+    }
   }
 }
 
