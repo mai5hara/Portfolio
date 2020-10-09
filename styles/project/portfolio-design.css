@@ -525,4 +525,56 @@ body {
     width: 90%;
   }
 }
+
+.language-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.language-change__wrap {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #41D6BB;
+  border-radius: 35px;
+  margin: 15px 15px 0 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.language-change__en, .language-change__jp {
+  width: 50%;
+  text-align: center;
+  line-height: 32px;
+  vertical-align: middle;
+  color: #41D6BB;
+}
+
+.language-change__active {
+  background-color: #41D6BB;
+  color: #fff;
+  border-radius: 35px 0px 0px 35px;
+}
+
+.language-change__active--jp {
+  background-color: #41D6BB;
+  color: #fff;
+  border-radius: 0px 35px 35px 0px;
+}
+
+.language-switch__inactive {
+  display: none;
+}
+
+.language-switch__inactive__inactive--en {
+  display: none;
+}
 /*# sourceMappingURL=portfolio-design.css.map */

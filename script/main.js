@@ -101,3 +101,42 @@ function activatePagenation(element) {
     const newActiveIndex = document.querySelector(`a[href='#${element.id}']`);
     newActiveIndex.classList.add("active");
 }
+
+/*=============================
+    language change
+=============================*/
+
+const en = document.querySelector(".language-change__en");
+const jp = document.querySelector(".language-change__jp");
+const enContents = document.querySelector(".language-switch__en");
+const jpContents = document.querySelector(".language-switch__jp");
+console.log('enContents', enContents)
+console.log('jpContents', jpContents)
+
+en.addEventListener('click', () => {
+    if (en.classList.contains('language-change__active')) {
+        en.classList.remove('language-change__active')
+        jp.classList.add('language-change__active--jp')
+        enContents.classList.add('language-switch__inactive')
+        jpContents.classList.remove('language-switch__inactive')
+    } else {
+        en.classList.add('language-change__active')
+        jp.classList.remove('language-change__active--jp')
+        enContents.classList.remove('language-switch__inactive')
+        jpContents.classList.add('language-switch__inactive')
+    }
+})
+
+jp.addEventListener('click', () => {
+    if (jp.classList.contains('language-change__active--jp')) {
+        en.classList.add('language-change__active')
+        jp.classList.remove('language-change__active--jp')
+        enContents.classList.remove('language-switch__inactive')
+        jpContents.classList.add('language-switch__inactive')
+    } else {
+        en.classList.remove('language-change__active')
+        jp.classList.add('language-change__active--jp')
+        enContents.classList.add('language-switch__inactive')
+        jpContents.classList.remove('language-switch__inactive')
+    }
+})

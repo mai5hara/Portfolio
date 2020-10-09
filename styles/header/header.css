@@ -222,11 +222,11 @@ body {
 }
 
 .accordion li.open .dropdownlink {
-  color: #6b6b6b;
+  color: #1f927d;
 }
 
 .accordion li.open i {
-  color: #6b6b6b;
+  color: #1f927d;
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -260,7 +260,6 @@ body {
 }
 
 .submenuItems a:hover {
-  background: #b63b4d;
-  color: #FFF;
+  color: #1f927d;
 }
 /*# sourceMappingURL=header.css.map */

@@ -2,7 +2,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 140px;
-  height: 70px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.language-change__wrap {
+  width: 65px;
+  height: 24px;
+}
+
+.language-change__en, .language-change__jp {
+  width: 50%;
+  text-align: center;
+  line-height: 24px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=language-change.css.map */

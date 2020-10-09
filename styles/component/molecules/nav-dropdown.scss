@@ -40,11 +40,11 @@
 }
 
 .accordion li.open .dropdownlink {
-  color: #6b6b6b;
+  color: darken($light-green, 20%);
 }
 
 .accordion li.open i {
-  color: #6b6b6b;
+  color: darken($light-green, 20%);
 }
 .accordion li.open i.fa-chevron-down {
   -webkit-transform: rotate(0deg);
@@ -77,6 +77,5 @@
 }
 
 .submenuItems a:hover {
-  background: #b63b4d;
-  color: #FFF;
+  color: darken($light-green, 20%);
 }
