@@ -1,0 +1,19 @@
+.about{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 8.0rem;
+
+  &__wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@include mq('sp') {
+  .about{
+    &__wrap {
+      width: 90%;
+    }
+  }
+}

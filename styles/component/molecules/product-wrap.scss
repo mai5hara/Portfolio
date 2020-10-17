@@ -1,0 +1,50 @@
+.product-wrap {
+  transition: 0.2s;
+  margin: 20vh 0;
+  animation-name: example;
+  &__service {
+    font-size: 2.4rem;
+  }
+
+  &__title {
+    font-size: 5.0rem;
+    margin: 1.0rem 0;
+  }
+
+  &__purpse {
+    font-size: 2.0rem;
+  }
+}
+
+@include mq('tab') {
+  .product-wrap {
+    margin: 10vh 0;
+    &__service {
+      font-size: 2.2rem;
+    }
+  
+    &__title {
+      font-size: 4.2rem;
+    }
+  
+    &__purpse {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@include mq('sp') {
+  .product-wrap {
+    &__service {
+      font-size: 1.6rem;
+    }
+  
+    &__title {
+      font-size: 2.7rem;
+    }
+  
+    &__purpse {
+      font-size: 1.3rem;
+    }
+  }
+}

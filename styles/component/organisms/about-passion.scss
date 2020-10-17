@@ -1,0 +1,34 @@
+.about-passion {
+  display: flex;
+  margin: 12.0rem 5.0rem;
+  justify-content: space-between;
+  &__wrap {
+    text-align: center;
+    width: 30%;
+  }
+  &__logo {
+    font-size: 5.0rem;
+    color: #fff;
+    background-color: $black;
+    padding: 2.0rem;
+    border-radius: 50%;
+  }
+  &__title {
+    font-size: 2.0rem;
+    margin: 2.0rem 0;
+  }
+  &__text {
+    word-wrap: break-word;
+  }
+}
+
+@include mq('sp') {
+  .about-passion {
+    display: block;
+    margin: 3.3rem 0 5.5rem 0;
+    &__wrap {
+      width: 100%;
+      margin-bottom: 5.0rem;
+    }
+  }
+}

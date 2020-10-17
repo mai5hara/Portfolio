@@ -1,0 +1,39 @@
+.language-change {
+  display: flex;
+  justify-content: flex-end;
+  &__wrap {
+    width: 90px;
+    display: flex;
+    border: 2px solid $light-green;
+    border-radius: 35px;
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+    user-select: none;
+  }
+  &__en, &__jp {
+    width: 50%;
+    text-align: center;
+    line-height: 32px;
+    vertical-align: middle;
+    color: $light-green;
+  }
+  &__active {
+    background-color: $light-green;
+    color: #fff;
+    border-radius: 35px 0px 0px 35px;
+    &--jp {
+      background-color: $light-green;
+      color: #fff;
+      border-radius: 0px 35px 35px 0px;
+    }
+  }
+}
+
+.language-switch {
+  &__inactive {
+    display: none;
+    &__inactive--en {
+      display: none;
+    }
+  }
+}

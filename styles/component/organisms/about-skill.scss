@@ -1,0 +1,106 @@
+.about-skill {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+  margin: 8.2rem auto 7.0rem auto;
+  &__wrap {
+    display: flex;
+    width: 46%;
+    margin-bottom: 2.0rem;
+    align-items: center;
+  }
+  &__img {
+    width: 12%;
+    margin-right: 1.5rem;
+  }
+  &__language {
+    width: 100%;
+  }
+  &__language-percentage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+    >p {
+      font-size: 2.1rem;
+    }
+  }
+  &__percentage-line {
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+  }
+  &__percentage-html, &__percentage-js, &__percentage-react, 
+  &__percentage-sketch, &__percentage-sass, &__percentage-ps, 
+  &__percentage-ai, &__percentage-pr, &__percentage-af{
+    height: 1.2rem;
+    background-image: linear-gradient(to right,#0DC600 , #ACC6FF);
+    border-radius: 10px;
+    opacity: 0;
+  }
+  @keyframes sizeScale {
+    0% { width: 0%; }
+  }
+  &__percentage {
+    $this: &;
+    opacity: 1;
+    animation: sizeScale 1.5s ease;
+    &--html {
+      @extend #{$this};
+      width: 90%;
+    }
+    &--js {
+      @extend #{$this};
+      width: 70%;
+    }
+    &--react {
+      @extend #{$this};
+      width: 70%;
+    }
+    &--sketch {
+      @extend #{$this};
+      width: 65%;
+    }
+    &--sass {
+      @extend #{$this};
+      width: 70%;
+    }
+    &--ps {
+      @extend #{$this};
+      width: 80%;
+    }
+    &--ai {
+      @extend #{$this};
+      width: 70%;
+    }
+    &--pr {
+      @extend #{$this};
+      width: 80%;
+    }
+    &--af {
+      @extend #{$this};
+      width: 30%;
+    }
+  }
+}
+
+@include mq('sp') {
+  .about-skill {
+    margin-top: 3.3rem;
+    margin-bottom: 5.5rem;
+    display: block;
+    &__wrap {
+      width: 100%;
+      margin-bottom: 2.0rem;
+    }
+    &__img {
+      width: 20%;
+    }
+    &__language-percentage {
+      >p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

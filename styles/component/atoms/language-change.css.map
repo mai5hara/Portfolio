@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,QAAQ;CAW1B;;AAVE,AAAD,sBAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AACA,AAAD,oBAAK,EAAG,oBAAI,CAAC;EACX,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "language-change.scss"
+    ],
+    "names": [],
+    "file": "language-change.css"
+}

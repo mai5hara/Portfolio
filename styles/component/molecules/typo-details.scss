@@ -1,0 +1,32 @@
+.typo-details {
+  text-align: center;
+  margin: 0 2rem;
+  &__ex {
+    font-size: 3.5rem;
+    margin-bottom: 0.6rem;
+  }
+  &__font-name {
+    display: block;
+  }
+  #font_helvetica {
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif; 
+  }
+  #font_rockwell {
+    font-family: "Rockwell","Courier Bold","Courier","Georgia","Times","Times New Roman",serif; 
+  }
+  #font_futura {
+    font-family: "Futura";
+  }
+  #font_montserrat {
+    font-family: "Montserrat",sans-serif;;
+  }
+  #font_gillsans {
+    font-family: "Gill Sans",sans-serif;;
+  }
+}
+
+@include mq('sp') {
+  .typo-details {
+    margin-bottom: 3.0rem;
+  }
+}

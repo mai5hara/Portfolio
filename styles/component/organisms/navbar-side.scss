@@ -1,0 +1,58 @@
+.navbar{
+  width: 100%;
+  &-side {
+    width: 8.0rem;
+    background-color: $light-green;
+    z-index: 9999;
+    border-right: 1px solid #fff;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    &__hamburger {
+      cursor: pointer;
+      margin: 47vh 2rem;
+      display: block;
+    }
+    &__bar1, &__bar2, &__bar3 {
+      height: 5px;
+      background-color: #fff;
+      margin: 0.6rem 0;
+      transition: 0.4s;
+    }
+    &__action {
+      > .navbar-side__bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+  
+      > .navbar-side__bar2 {
+        opacity: 0;
+      }
+  
+      > .navbar-side__bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
+}
+
+@include mq('sp') {
+  .navbar{
+    &-side {
+      width: 100%;
+      height: 6.0rem;
+      position: fixed;
+      border-bottom: 1px solid #fff;
+      &__hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 4.0rem;
+        margin: 1.0rem 0 1.0rem 1.2rem;
+        width: 4.0rem;
+        z-index: 1;
+      }
+    }
+  }
+}

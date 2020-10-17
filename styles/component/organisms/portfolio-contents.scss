@@ -1,0 +1,74 @@
+.portfolio-contents {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  scroll-snap-align: start;
+  &-otm {
+    background-image : url('../../imgs/mountain.jpg');
+    background-size: cover;
+  }
+  &-bm {
+    background-color: #EA4E36;
+    background-image: url('../../imgs/brushmap_logo_whitever.png');
+    background-position: top 51% right 22%;
+    background-size: 10%;
+  }
+  &-egg {
+    background-position: top 51% right 22%;
+    background-size: 10%;
+    background-color: #ffb356;
+    background-image : url('../../imgs/super_soft_boiled_egg.svg');
+  }
+  &-weather {
+    background-position: top 51% right 22%;
+    background-size: 10%;
+    background-color: #fdf3e7;
+    background-image : url('../../imgs/sunny.svg');
+  }
+
+  &-movie {
+    background-color: #24589E;
+    background-image : url('../../imgs/movie.png');
+    background-position: top 51% right 22%;
+    background-size: 10%;
+  }
+  &__left {
+    width: 50%;
+    height: 100vh;
+    background-color: rgba($light-gray,0.8);
+    padding: 5.0rem;
+  }
+}
+
+@include mq('tab') {
+  .portfolio-contents {
+    &-bm, &-egg, &-weather, &-showcase, &-movie {
+      background-position: top 50% right 16%;
+      background-size: 25%;
+    }
+  }
+}
+
+@include mq('sp') {
+  .portfolio-contents {
+    &-bm {
+      background-position: top 51% right 35%;
+      background-size: 60%;
+    }
+
+    &-egg, &-weather {
+      background-position: top 51% right 35%;
+      background-size: 70%;
+    }
+
+    &-showcase {
+      background-position: top 51% right 22%;
+      background-size: 60%;
+    }
+
+    &__left {
+      width: 75%;
+      padding: 8.0rem 1.5rem;
+    }
+  }
+}

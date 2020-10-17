@@ -1,0 +1,34 @@
+.project-description {
+  display: flex;
+  margin: 0 0 1.5rem 0;
+  &__text-right, &__text-left {
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 1.8rem;
+
+      span {
+          font-size: 1.3rem;
+          display: block;
+          margin-bottom: 0.5rem;
+          color: $light-gray;
+      }
+    }
+  }
+  &__text-right {
+    width: 60%;
+    word-break: break-word;
+  }
+  &__text-left {
+    width: 30%;
+    margin-right: 10%;
+  }
+}
+
+@include mq('sp') {
+  .project-description {
+    display: block;
+    &__text-right, &__text-left {
+      width: 100%;
+    }
+  }
+}
